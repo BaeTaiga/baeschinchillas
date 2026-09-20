@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care | Bae's Chinchillas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --background: #FFB7C5;
+            --white: #FFFFFF;
+            --pink: #FFB7C5;
+            --heading: #ED8999;
+            --border: #ED7B8D;
+            --text: #4F4F4F;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #FFB7C5;
+            color: var(--text);
+            font-family: "Quicksand", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: #FFFFFF;
+            border-bottom: 2px solid #ED7B8D;
+            text-align: center;
+            padding: 28px 20px 0;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo-display {
+            width: 100%;
+            min-height: 145px;
+            display: grid;
+            grid-template-columns: 1fr 170px 1fr;
+            align-items: end;
+            gap: 20px;
+            margin: 0 auto 18px;
+        }
+
+        .logo-side {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 18px;
+            height: 135px;
+        }
+
+        .decorative-chinchilla {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+        }
+
+        /* LEFT SIDE */
+
+        .left-side .chinchilla-1 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        .left-side .chinchilla-2 {
+            width: 115px;
+            max-height: 105px;
+        }
+
+        .left-side .chinchilla-3 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        /* RIGHT SIDE */
+
+        .right-side .chinchilla-1 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        .right-side .chinchilla-2 {
+            width: 105px;
+            max-height: 115px;
+        }
+
+        .right-side .chinchilla-3 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        /* MAIN LOGO */
+
+        .main-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 140px;
+        }
+
+        .site-logo {
+            width: 150px;
+            height: auto;
+            max-height: 140px;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* WEBSITE NAME */
+
+        .brand-main {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            color: #ED8999;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .title-blossom {
+            color: #FFB7C5;
+            font-family: serif;
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 11px;
+            margin-top: 28px;
+            padding-bottom: 5px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 13px 25px;
+            color: #ED8999;
+            background: #FFF7F9;
+            border: 1px solid #ED7B8D;
+            border-radius: 18px;
+            font-size: 15px;
+            font-weight: 600;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background: #FFB7C5;
+            color: #FFFFFF;
+            transform: translateY(-1px);
+        }
+
+        nav a.active {
+            background: #FFB7C5;
+            color: #FFFFFF;
+        }
+
+        /* =========================
+           PAGE
+        ========================= */
+
+        .page {
+            width: 94%;
+            max-width: 1100px;
+            margin: 38px auto 0;
+        }
+
+        .content {
+            background: #FFFFFF;
+            border: 1px solid #ED7B8D;
+            border-radius: 70px;
+            padding: 55px 70px 65px;
+            box-shadow: 0 8px 25px rgba(237, 123, 141, 0.08);
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 42px;
+        }
+
+        .page-title h2 {
+            margin: 0;
+            color: #ED8999;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .page-title .decorative {
+            margin-top: 8px;
+        }
+
+        .decorative {
+            margin-top: 8px;
+            color: #FFB7C5;
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+
+        /* =========================
+           CARE SECTIONS
+        ========================= */
+
+        .care-section {
+            max-width: 850px;
+            margin: 0 auto 48px;
+            text-align: left;
+        }
+
+        .care-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .care-section h3 {
+            margin: 0 0 18px;
+            color: #ED8999;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .care-section h4 {
+            margin: 30px 0 10px;
+            color: #ED8999;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .care-section p {
+            margin: 0 0 20px;
+        }
+
+        .care-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .care-section strong {
+            font-weight: 700;
+        }
+
+        /* =========================
+           DAILY CHECKLIST
+        ========================= */
+
+        .daily-item {
+            margin-bottom: 22px;
+        }
+
+        .daily-item:last-of-type {
+            margin-bottom: 28px;
+        }
+
+        .daily-item-title {
+            color: #ED8999;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .final-reminder {
+            margin-top: 8px;
+        }
+
+        /* =========================
+           SOCIAL MEDIA
+        ========================= */
+
+        .social-area {
+            width: 100%;
+            margin-top: 22px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        .social-divider {
+            width: 900px;
+            height: 1px;
+            background: #ED7B8D;
+            margin: 0 auto 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ED8999;
+            text-decoration: none;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .social-link:hover {
+            color: #FFB7C5;
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .facebook-icon {
+            fill: #ED8999;
+        }
+
+        .facebook-f {
+            fill: #FFFFFF;
+        }
+
+        .instagram-icon {
+            fill: none;
+            stroke: #ED8999;
+            stroke-width: 1.8;
+        }
+
+        .instagram-dot {
+            fill: #ED8999;
+            stroke: none;
+        }
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .logo-display {
+                grid-template-columns: 1fr 145px 1fr;
+                gap: 10px;
+            }
+
+            .logo-side {
+                gap: 8px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 80px;
+                max-height: 100px;
+            }
+
+            .site-logo {
+                width: 135px;
+            }
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 650px) {
+
+            header {
+                padding-top: 22px;
+            }
+
+            .logo-display {
+                min-height: 105px;
+                grid-template-columns: 1fr 115px 1fr;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+
+            .logo-side {
+                height: 95px;
+                gap: 3px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 43px;
+                max-height: 70px;
+            }
+
+            .main-logo-container {
+                height: 105px;
+            }
+
+            .site-logo {
+                width: 110px;
+                max-height: 105px;
+            }
+
+            .brand-main {
+                gap: 9px;
+                font-size: 28px;
+            }
+
+            .title-blossom {
+                font-size: 26px;
+            }
+
+            nav {
+                gap: 6px;
+                margin-top: 22px;
+                padding-bottom: 5px;
+            }
+
+            nav a {
+                padding: 10px 14px;
+                font-size: 13px;
+                border-radius: 14px;
+            }
+
+            .page {
+                width: 94%;
+                margin-top: 28px;
+            }
+
+            .content {
+                border-radius: 55px;
+                padding: 38px 25px 45px;
+            }
+
+            .page-title {
+                margin-bottom: 35px;
+            }
+
+            .page-title h2 {
+                font-size: 26px;
+            }
+
+            .decorative {
+                font-size: 19px;
+                letter-spacing: 3px;
+            }
+
+            .care-section {
+                margin-bottom: 38px;
+            }
+
+            .care-section h3 {
+                font-size: 23px;
+                margin-bottom: 15px;
+            }
+
+            .care-section h4 {
+                font-size: 18px;
+                margin-top: 26px;
+            }
+
+            .daily-item {
+                margin-bottom: 20px;
+            }
+
+            .daily-item-title {
+                font-size: 17px;
+            }
+
+            .social-area {
+                padding-bottom: 20px;
+            }
+
+            .social-divider {
+                width: 90%;
+                margin-bottom: 18px;
+            }
+
+            .social-links {
+                gap: 18px;
+            }
+
+            .social-link {
+                width: 34px;
+                height: 34px;
+            }
+
+            .social-icon {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        /* =========================
+           VERY SMALL PHONES
+        ========================= */
+
+        @media (max-width: 430px) {
+
+            .logo-display {
+                grid-template-columns: 1fr 110px 1fr;
+            }
+
+            .logo-side .chinchilla-1,
+            .logo-side .chinchilla-3 {
+                display: none;
+            }
+
+            .logo-side .chinchilla-2 {
+                width: 55px;
+                max-height: 75px;
+            }
+
+            .site-logo {
+                width: 105px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="logo-display">
+
+            <div class="logo-side left-side">
+                <img
+                    src="chinchilla-right-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+                <img
+                    src="chinchilla-right-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+                <img
+                    src="chinchilla-right-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+            </div>
+
+            <div class="main-logo-container">
+                <img
+                    src="logo-final.png"
+                    alt="Bae's Chinchillas logo"
+                    class="site-logo"
+                >
+            </div>
+
+            <div class="logo-side right-side">
+                <img
+                    src="chinchilla-left-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+                <img
+                    src="chinchilla-left-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+                <img
+                    src="chinchilla-left-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+            </div>
+
+        </div>
+
+        <h1 class="brand-main">
+            <span class="title-blossom">❀</span>
+            <span>Bae's Chinchillas</span>
+            <span class="title-blossom">❀</span>
+        </h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fact.html">Fact</a>
+            <a href="care.html" class="active">Care</a>
+            <a href="chinchillas.html">Chinchillas</a>
+            <a href="adoption.html">Adoption</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="page">
+    <div class="content">
+
+        <div class="page-title">
+            <h2>Chinchilla Care</h2>
+            <div class="decorative">♡ ❀ ♡</div>
+        </div>
+
+        <!-- 1. BASIC CARE -->
+
+        <section class="care-section">
+            <h3>Basic Care</h3>
+
+            <p>
+                Chinchillas have specific care requirements that are essential
+                to keeping them healthy and happy. Their basic care includes a
+                spacious and secure enclosure, a high-fibre diet with constant
+                access to fresh hay and water, regular dust baths, a cool and
+                dry environment, safe enrichment and opportunities for exercise.
+            </p>
+
+            <p>
+                Regularly monitoring their behaviour, appetite and weight is
+                also an important part of their care. Before bringing a
+                chinchilla home, you should have a veterinarian experienced
+                with exotic animals, including chinchillas, prepared in case
+                veterinary care or an emergency arises.
+            </p>
+        </section>
+
+        <!-- 2. CAGE / ENCLOSURE -->
+
+        <section class="care-section">
+            <h3>Cage / Enclosure</h3>
+
+            <p>
+                Chinchillas are active animals that need plenty of space to run,
+                jump and explore. A <strong>large cage is required</strong> to
+                provide them with enough space to stay active and comfortable.
+            </p>
+
+            <h4>Recommended Cage</h4>
+
+            <p>
+                A cage we highly recommend is the <strong>double-unit MidWest
+                Ferret Nation or Critter Nation</strong>. These cages provide
+                plenty of vertical space while also being sturdy and easy to
+                access for cleaning and daily care.
+            </p>
+
+            <p>
+                <strong>Important:</strong> The plastic pans that come with
+                these cages should be replaced with <strong>replacement metal
+                pans</strong>. Plastic should never be within a chinchilla's
+                reach, as chinchillas are natural chewers and may chew and
+                ingest plastic.
+            </p>
+
+            <h4>Flooring &amp; Bedding</h4>
+
+            <p>
+                Chinchillas should <strong>never be required to live or walk
+                directly on cage bars</strong>. Their feet can become injured,
+                and legs can become caught between unsuitable bars, potentially
+                causing serious injuries or fractures.
+            </p>
+
+            <p>
+                For flooring, we recommend <strong>metal pans</strong> as they
+                are durable, chew-proof and easy to clean. For bedding, suitable
+                options include <strong>kiln-dried pine shavings</strong> or
+                <strong>anti-pill fleece liners</strong>.
+            </p>
+
+            <p>
+                Avoid plastic wherever possible, especially anywhere your
+                chinchilla can reach and chew. When furnishing their cage,
+                always choose <strong>safe wood, anti-pill fleece and metal</strong>
+                instead of plastic or other unsafe materials.
+            </p>
+
+            <h4>Hiding Places</h4>
+
+            <p>
+                The cage should provide plenty of <strong>hiding places</strong>
+                where your chinchilla can feel safe, rest and sleep. As prey
+                animals, having places to retreat and hide is important for
+                their sense of security.
+            </p>
+
+            <h4>Platforms &amp; Ledges</h4>
+
+            <p>
+                Multiple <strong>ledges and platforms</strong> should be provided
+                at different heights, using safe materials such as metal or
+                kiln-dried pine. Chinchillas enjoy climbing and jumping, so
+                having at least one safe house or platform higher up in the
+                cage is highly recommended.
+            </p>
+
+            <h4>Enrichment</h4>
+
+            <p>
+                Other suitable enrichment can include <strong>anti-pill fleece
+                hammocks, tunnels, bridges, lava ledges and safe wooden
+                accessories</strong>. The goal is to create an interesting,
+                secure environment with plenty of safe things to explore,
+                climb, jump on and interact with.
+            </p>
+        </section>
+
+        <!-- 3. DIET & NUTRITION -->
+
+        <section class="care-section">
+            <h3>Diet &amp; Nutrition</h3>
+
+            <p>
+                A proper diet is one of the most important parts of keeping a
+                chinchilla healthy. Chinchillas need a <strong>high-fibre diet
+                based mainly on Timothy hay</strong>, with suitable chinchilla
+                pellets as a supplement.
+            </p>
+
+            <h4>Timothy Hay</h4>
+
+            <p>
+                <strong>Timothy hay makes up the majority of your chinchilla's
+                diet and should always be available.</strong> Fresh Timothy hay
+                should be provided every day.
+            </p>
+
+            <p>
+                Remove and throw away the old hay before replacing it with fresh
+                hay. Providing fresh Timothy hay daily is crucial because it
+                encourages natural chewing, supports healthy digestion and helps
+                wear down their continuously growing teeth.
+            </p>
+
+            <h4>Chinchilla Pellets</h4>
+
+            <p>
+                Pellets are <strong>made specifically for chinchillas</strong>
+                and are used as a supplement to their hay-based diet.
+            </p>
+
+            <p>
+                Refill the pellets when needed, while keeping hay as the main
+                part of their diet. Rabbit, guinea pig or other species' food
+                is not suitable.
+            </p>
+
+            <h4>Fresh Water</h4>
+
+            <p>
+                Fresh, clean drinking water is available <strong>at all
+                times</strong>.
+            </p>
+
+            <p>
+                Provide new water every day and throw away the old water rather
+                than simply topping it up. Clean the water bottle regularly to
+                keep the water supply hygienic.
+            </p>
+
+            <h4>Treats &amp; Chewing</h4>
+
+            <p>
+                <strong>Candy and treats are not needed.</strong> Fresh
+                vegetables, fruits and other unsuitable ingredients can upset
+                a chinchilla's sensitive digestive system and can cause serious
+                digestive problems.
+            </p>
+
+            <p>
+                Instead of treats, provide <strong>safe chew toys and
+                materials</strong> made from appropriate wood. Suitable examples
+                include <strong>kiln-dried pine, apple sticks and pear
+                sticks</strong>. Chewing is important for dental health because
+                chinchilla teeth grow continuously.
+            </p>
+        </section>
+
+        <!-- 4. TEMPERATURE & ENVIRONMENT -->
+
+        <section class="care-section">
+            <h3>Temperature &amp; Environment</h3>
+
+            <p>
+                Chinchillas are adapted to <strong>cool, dry environments</strong>
+                and are highly sensitive to heat. Their dense fur makes it
+                difficult for them to cool themselves, and overheating can
+                quickly become life-threatening.
+            </p>
+
+            <p>
+                A temperature of approximately <strong>10–18°C</strong> is
+                recommended. Temperatures approaching <strong>27°C or higher
+                can cause heatstroke and may be fatal</strong>. Keep your
+                chinchilla's environment cool, dry and well ventilated, and
+                avoid direct sunlight, radiators, heaters and other sources
+                of heat.
+            </p>
+
+            <h4>Humidity</h4>
+
+            <p>
+                Chinchillas should live in a <strong>cool, dry environment</strong>.
+                High humidity can make it more difficult for them to regulate
+                their body temperature and can cause moisture to become trapped
+                in their dense fur.
+            </p>
+
+            <p>
+                Keep the environment dry and avoid placing the cage in damp or
+                poorly ventilated areas.
+            </p>
+        </section>
+
+        <!-- 5. DUST BATHS -->
+
+        <section class="care-section">
+            <h3>Dust Baths</h3>
+
+            <p>
+                Chinchillas do not bathe in water. They clean their dense fur by
+                rolling in <strong>specially formulated chinchilla dust</strong>,
+                which absorbs excess oils and moisture from the coat.
+            </p>
+
+            <p>
+                A dust bath should be provided <strong>regularly</strong>, using
+                high-quality dust specifically made for chinchillas. The dust
+                should be fine enough to reach through their dense fur without
+                damaging the coat or irritating the eyes and respiratory system.
+            </p>
+
+            <p>
+                Provide the dust bath for a limited amount of time and remove it
+                afterwards. Leaving the dust bath inside the cage permanently
+                can result in excessive dust, contamination and unnecessary
+                exposure.
+            </p>
+
+            <p>
+                <strong>Never use water, sand, household dust or other unsuitable
+                materials as a substitute for chinchilla dust.</strong>
+            </p>
+        </section>
+
+        <!-- 6. EXERCISE & ENRICHMENT -->
+
+        <section class="care-section">
+            <h3>Exercise &amp; Enrichment</h3>
+
+            <p>
+                Chinchillas are active animals that need <strong>daily exercise
+                and mental stimulation</strong>. A properly furnished cage
+                provides opportunities to climb, jump, explore and stay active
+                throughout the day.
+            </p>
+
+            <p>
+                Provide plenty of <strong>safe ledges, platforms, tunnels,
+                bridges and wooden toys</strong> for your chinchilla to explore.
+                Rotate suitable toys and accessories regularly to keep their
+                environment interesting.
+            </p>
+
+            <p>
+                A <strong>chinchilla-safe exercise wheel</strong> can also
+                provide additional exercise. The wheel must be large enough for
+                a chinchilla to run with a straight back and have a solid
+                running surface. Wheels with wire, mesh or open bars can cause
+                serious injuries and must not be used.
+            </p>
+
+            <p>
+                If your chinchilla has supervised time outside the cage, the
+                area must be <strong>completely chinchilla-proofed</strong>.
+                Remove electrical cables, toxic plants, unsafe materials and
+                anything else they could chew or ingest. Always supervise them
+                closely during out-of-cage time.
+            </p>
+
+            <p>
+                Exercise and enrichment are essential for keeping chinchillas
+                physically active, mentally stimulated and able to express
+                their natural behaviours.
+            </p>
+        </section>
+
+        <!-- 7. SOCIAL NEEDS & COMPANIONSHIP -->
+
+        <section class="care-section">
+            <h3>Social Needs &amp; Companionship</h3>
+
+            <p>
+                Chinchillas are <strong>social animals</strong> and should live
+                with at least one other compatible chinchilla. They naturally
+                form social groups and benefit greatly from having another
+                chinchilla as a companion.
+            </p>
+
+            <p>
+                There are exceptions where a chinchilla may need to live
+                separately, such as when an individual is <strong>aggressive,
+                seriously ill or giving birth</strong>. Any separation should
+                be handled carefully, as chinchillas are naturally social
+                animals.
+            </p>
+
+            <p>
+                Chinchillas often form strong bonds with each other and enjoy
+                <strong>cuddling, sleeping and resting together</strong>. They
+                are not naturally cuddly animals towards humans, however. While
+                many chinchillas can become very comfortable with their owners
+                and enjoy interaction, they generally prefer to interact on
+                their own terms rather than being picked up or held.
+            </p>
+
+            <p>
+                Chinchillas are also <strong>intelligent animals</strong> and
+                can become familiar with their owner's daily routine. They may
+                adjust their activity and behaviour around the routines of the
+                household, but they remain <strong>crepuscular</strong>, meaning
+                they are naturally most active around <strong>dawn and
+                dusk</strong>.
+            </p>
+        </section>
+
+        <!-- 8. DENTAL CARE -->
+
+        <section class="care-section">
+            <h3>Dental Care</h3>
+
+            <p>
+                Chinchillas' teeth <strong>continuously grow throughout their
+                entire lives</strong>. Regular chewing is therefore essential
+                for keeping their teeth naturally worn down and healthy.
+            </p>
+
+            <p>
+                <strong>Timothy hay is essential for dental health</strong> and
+                should always be available. The constant chewing involved in
+                eating hay helps naturally wear down their continuously growing
+                teeth.
+            </p>
+
+            <p>
+                Safe wooden chew toys are also highly valued by chinchillas and
+                provide additional opportunities for natural chewing. Suitable
+                options include <strong>apple sticks, pear sticks and other
+                chinchilla-safe woods</strong>.
+            </p>
+
+            <p>
+                Providing plenty of appropriate chewing materials is an
+                important part of preventing dental problems and maintaining
+                healthy teeth.
+            </p>
+        </section>
+
+        <!-- 9. HEALTH & VETERINARY CARE -->
+
+        <section class="care-section">
+            <h3>Health &amp; Veterinary Care</h3>
+
+            <p>
+                Chinchillas can be very good at <strong>hiding signs of
+                illness</strong>, so knowing your chinchilla's normal behaviour
+                is important. Small changes can sometimes be the first
+                indication that something is wrong.
+            </p>
+
+            <p>
+                Pay attention to changes in <strong>appetite, drinking,
+                droppings, weight, activity, behaviour and appearance</strong>.
+                A chinchilla that suddenly becomes quiet, stops eating, loses
+                weight or behaves unusually should never be ignored.
+            </p>
+
+            <p>
+                Regularly check your chinchilla's <strong>eyes, nose, mouth,
+                teeth, fur, feet and overall condition</strong> so that any
+                changes can be noticed early.
+            </p>
+
+            <p>
+                Finding an experienced <strong>exotic-animal veterinarian</strong>
+                before you need one is an important part of responsible
+                chinchilla ownership. Chinchillas can deteriorate quickly when
+                they become seriously ill, so prompt veterinary attention is
+                important when something is clearly wrong.
+            </p>
+
+            <p>
+                Keeping a record of your chinchilla's <strong>weight and any
+                changes in behaviour or health</strong> can also make it easier
+                to notice problems early and provide useful information if
+                veterinary care is needed.
+            </p>
+        </section>
+
+        <!-- 10. CLEANING & HYGIENE -->
+
+        <section class="care-section">
+            <h3>Cleaning &amp; Hygiene</h3>
+
+            <p>
+                Keeping your chinchilla's cage and environment
+                <strong>clean and hygienic</strong> is an important part of
+                maintaining their health and wellbeing. A regular cleaning
+                routine helps provide a comfortable, healthy environment.
+            </p>
+
+            <p>
+                We clean out our chinchillas' cages <strong>every day</strong>.
+                Old water, hay, pellets and soiled bedding are removed and
+                replaced with fresh supplies.
+            </p>
+
+            <p>
+                Shelves, platforms and ledges are also checked daily and
+                <strong>vacuumed when needed</strong> to remove loose hay,
+                dust, fur and other debris.
+            </p>
+        </section>
+
+        <!-- 11. WEIGHT MONITORING -->
+
+        <section class="care-section">
+            <h3>Weight Monitoring</h3>
+
+            <p>
+                Keeping track of your chinchilla's <strong>weight is essential
+                and is your responsibility as an owner</strong>. Regular
+                weighing can provide valuable information about your chinchilla's
+                health and can help you notice changes before other signs become
+                obvious.
+            </p>
+
+            <p>
+                <strong>Weight loss can be a sign that a chinchilla is
+                unwell</strong> and should never be ignored. Knowing your
+                chinchilla's normal weight makes it easier to recognize when
+                something has changed.
+            </p>
+
+            <p>
+                For females used in breeding, <strong>gradual weight gain can
+                also be an indication of pregnancy</strong>. Keeping accurate
+                weight records can therefore be particularly useful when
+                monitoring a breeding female.
+            </p>
+
+            <p>
+                We recommend weighing your chinchilla <strong>regularly and
+                keeping a record of their weight</strong> so that changes can
+                be identified over time.
+            </p>
+        </section>
+
+        <!-- 12. DAILY CHECKLIST -->
+
+        <section class="care-section">
+            <h3>Daily Checklist</h3>
+
+            <div class="daily-item">
+                <div class="daily-item-title">♡ Fresh, clean water</div>
+                <p>
+                    Throw away the old water and provide fresh, clean water.
+                </p>
+            </div>
+
+            <div class="daily-item">
+                <div class="daily-item-title">♡ Fresh Timothy hay</div>
+                <p>
+                    Remove the old hay and provide fresh Timothy hay.
+                </p>
+            </div>
+
+            <div class="daily-item">
+                <div class="daily-item-title">♡ Chinchilla pellets</div>
+                <p>
+                    Check the pellet supply and refill when needed.
+                </p>
+            </div>
+
+            <div class="daily-item">
+                <div class="daily-item-title">♡ Clean bedding</div>
+                <p>
+                    Remove old hay, food and soiled bedding and replace with
+                    fresh supplies.
+                </p>
+            </div>
+
+            <div class="daily-item">
+                <div class="daily-item-title">
+                    ♡ Clean shelves, platforms and ledges
+                </div>
+                <p>
+                    Check shelves, platforms and ledges and vacuum them clean
+                    of debris.
+                </p>
+            </div>
+
+            <div class="daily-item">
+                <div class="daily-item-title">♡ Health check</div>
+                <p>
+                    Take a moment to observe your chinchilla. Check their
+                    behaviour, activity, appetite and general appearance.
+                </p>
+            </div>
+
+            <p>
+                Daily care is not just about providing food and cleaning the
+                cage. <strong>Taking the time to observe your chinchilla is an
+                important part of responsible ownership.</strong> A consistent
+                routine helps ensure their basic needs are met and allows you to
+                notice changes in their health or behaviour.
+            </p>
+        </section>
+
+        <!-- 13. FINAL REMINDER -->
+
+        <section class="care-section final-reminder">
+            <h3>Final Reminder</h3>
+
+            <p>
+                Owning a chinchilla is a <strong>long-term commitment</strong>
+                and a responsibility that should never be taken lightly.
+                Chinchillas can live for many years and depend entirely on their
+                owners for their care, safety and wellbeing.
+            </p>
+
+            <p>
+                They require <strong>proper housing, a suitable diet,
+                companionship, daily care, patience and attention</strong>
+                throughout their lives. They are not low-maintenance pets and
+                should never be brought home on impulse.
+            </p>
+
+            <p>
+                Do your research, understand their needs and make sure you are
+                fully prepared before bringing a chinchilla into your home.
+                <strong>A chinchilla is a living animal, not a temporary toy or
+                passing interest.</strong>
+            </p>
+        </section>
+
+    </div>
+</main>
+
+<!-- SOCIAL MEDIA -->
+
+<section class="social-area">
+
+    <div class="social-divider"></div>
+
+    <div class="social-links">
+
+        <a
+            href="https://www.facebook.com/baeschinchillas"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+        >
+            <svg
+                class="social-icon facebook-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <circle cx="12" cy="12" r="11" />
+
+                <path
+                    class="facebook-f"
+                    d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
+                />
+            </svg>
+        </a>
+
+        <a
+            href="https://www.instagram.com/baeschinchilla"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+        >
+            <svg
+                class="social-icon instagram-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="5"
+                />
+
+                <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                />
+
+                <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    class="instagram-dot"
+                />
+            </svg>
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

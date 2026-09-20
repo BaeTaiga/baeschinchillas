@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chinchilla Facts | Bae's Chinchillas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --background: #FFB7C5;
+            --white: #FFFFFF;
+            --pink: #FFB7C5;
+            --heading: #ED8999;
+            --border: #ED7B8D;
+            --text: #4F4F4F;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #FFB7C5;
+            color: var(--text);
+            font-family: "Quicksand", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: #FFFFFF;
+            border-bottom: 2px solid #ED7B8D;
+            text-align: center;
+            padding: 28px 20px 0;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo-display {
+            width: 100%;
+            min-height: 145px;
+            display: grid;
+            grid-template-columns: 1fr 170px 1fr;
+            align-items: end;
+            gap: 20px;
+            margin: 0 auto 18px;
+        }
+
+        .logo-side {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 18px;
+            height: 135px;
+        }
+
+        .decorative-chinchilla {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+        }
+
+        /* LEFT SIDE */
+
+        .left-side .chinchilla-1 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        .left-side .chinchilla-2 {
+            width: 115px;
+            max-height: 105px;
+        }
+
+        .left-side .chinchilla-3 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        /* RIGHT SIDE */
+
+        .right-side .chinchilla-1 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        .right-side .chinchilla-2 {
+            width: 105px;
+            max-height: 115px;
+        }
+
+        .right-side .chinchilla-3 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        /* MAIN LOGO */
+
+        .main-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 140px;
+        }
+
+        .site-logo {
+            width: 150px;
+            height: auto;
+            max-height: 140px;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* WEBSITE NAME */
+
+        .brand-main {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            color: #ED8999;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .title-blossom {
+            color: #FFB7C5;
+            font-family: serif;
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 11px;
+            margin-top: 28px;
+            padding-bottom: 5px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 13px 25px;
+            color: #ED8999;
+            background: #FFF7F9;
+            border: 1px solid #ED7B8D;
+            border-radius: 18px;
+            font-size: 15px;
+            font-weight: 600;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background: #FFB7C5;
+            color: #FFFFFF;
+            transform: translateY(-1px);
+        }
+
+        nav a.active {
+            background: #FFB7C5;
+            color: #FFFFFF;
+        }
+
+        /* =========================
+           PAGE
+        ========================= */
+
+        .page {
+            width: 94%;
+            max-width: 1100px;
+            margin: 38px auto 0;
+        }
+
+        .content {
+            background: #FFFFFF;
+            border: 1px solid #ED7B8D;
+            border-radius: 70px;
+            padding: 55px 70px 65px;
+            box-shadow: 0 8px 25px rgba(237, 123, 141, 0.08);
+        }
+
+        /* =========================
+           PAGE TITLE
+        ========================= */
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 42px;
+        }
+
+        .page-title h2 {
+            margin: 0;
+            color: #ED8999;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .page-title .decorative {
+            margin-top: 8px;
+        }
+
+        .decorative {
+            margin-top: 8px;
+            color: #FFB7C5;
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+
+        /* =========================
+           FACT SECTIONS
+        ========================= */
+
+        .fact-section {
+            max-width: 850px;
+            margin: 0 auto 48px;
+            text-align: left;
+        }
+
+        .fact-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .fact-section h3 {
+            margin: 0 0 18px;
+            color: #ED8999;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: left;
+        }
+
+        .fact-section p {
+            margin: 0 0 20px;
+        }
+
+        .fact-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           SOCIAL MEDIA
+        ========================= */
+
+        .social-area {
+            width: 100%;
+            margin-top: 22px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        .social-divider {
+            width: 900px;
+            height: 1px;
+            background: #ED7B8D;
+            margin: 0 auto 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ED8999;
+            text-decoration: none;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .social-link:hover {
+            color: #FFB7C5;
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .facebook-icon {
+            fill: #ED8999;
+        }
+
+        .facebook-f {
+            fill: #FFFFFF;
+        }
+
+        .instagram-icon {
+            fill: none;
+            stroke: #ED8999;
+            stroke-width: 1.8;
+        }
+
+        .instagram-dot {
+            fill: #ED8999;
+            stroke: none;
+        }
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .logo-display {
+                grid-template-columns: 1fr 145px 1fr;
+                gap: 10px;
+            }
+
+            .logo-side {
+                gap: 8px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 80px;
+                max-height: 100px;
+            }
+
+            .site-logo {
+                width: 135px;
+            }
+
+            .social-divider {
+                width: 90%;
+            }
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 650px) {
+
+            header {
+                padding-top: 22px;
+            }
+
+            .logo-display {
+                min-height: 105px;
+                grid-template-columns: 1fr 115px 1fr;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+
+            .logo-side {
+                height: 95px;
+                gap: 3px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 43px;
+                max-height: 70px;
+            }
+
+            .main-logo-container {
+                height: 105px;
+            }
+
+            .site-logo {
+                width: 110px;
+                max-height: 105px;
+            }
+
+            .brand-main {
+                gap: 9px;
+                font-size: 28px;
+            }
+
+            .title-blossom {
+                font-size: 26px;
+            }
+
+            nav {
+                gap: 6px;
+                margin-top: 22px;
+                padding-bottom: 5px;
+            }
+
+            nav a {
+                padding: 10px 14px;
+                font-size: 13px;
+                border-radius: 14px;
+            }
+
+            .page {
+                width: 94%;
+                margin-top: 28px;
+            }
+
+            .content {
+                border-radius: 55px;
+                padding: 38px 25px 45px;
+            }
+
+            .page-title {
+                margin-bottom: 35px;
+            }
+
+            .page-title h2 {
+                font-size: 26px;
+            }
+
+            .decorative {
+                font-size: 19px;
+                letter-spacing: 3px;
+            }
+
+            .fact-section {
+                margin-bottom: 38px;
+            }
+
+            .fact-section h3 {
+                font-size: 23px;
+                margin-bottom: 15px;
+                text-align: left;
+            }
+
+            .social-area {
+                padding-bottom: 20px;
+            }
+
+            .social-divider {
+                width: 90%;
+                margin-bottom: 18px;
+            }
+
+            .social-links {
+                gap: 18px;
+            }
+
+            .social-link {
+                width: 34px;
+                height: 34px;
+            }
+
+            .social-icon {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        /* =========================
+           VERY SMALL PHONES
+        ========================= */
+
+        @media (max-width: 430px) {
+
+            .logo-display {
+                grid-template-columns: 1fr 110px 1fr;
+            }
+
+            .logo-side .chinchilla-1,
+            .logo-side .chinchilla-3 {
+                display: none;
+            }
+
+            .logo-side .chinchilla-2 {
+                width: 55px;
+                max-height: 75px;
+            }
+
+            .site-logo {
+                width: 105px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <div class="header-inner">
+
+        <div class="logo-display">
+
+            <!-- LEFT CHINCHILLAS -->
+
+            <div class="logo-side left-side">
+
+                <img
+                    src="chinchilla-right-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="chinchilla-right-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="chinchilla-right-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <!-- MAIN LOGO -->
+
+            <div class="main-logo-container">
+
+                <img
+                    src="logo-final.png"
+                    alt="Bae's Chinchillas logo"
+                    class="site-logo"
+                >
+
+            </div>
+
+            <!-- RIGHT CHINCHILLAS -->
+
+            <div class="logo-side right-side">
+
+                <img
+                    src="chinchilla-left-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="chinchilla-left-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="chinchilla-left-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+
+            </div>
+
+        </div>
+
+        <!-- WEBSITE NAME -->
+
+        <h1 class="brand-main">
+
+            <span class="title-blossom">❀</span>
+
+            <span>Bae's Chinchillas</span>
+
+            <span class="title-blossom">❀</span>
+
+        </h1>
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="fact.html" class="active">Fact</a>
+
+            <a href="care.html">Care</a>
+
+            <a href="chinchillas.html">Chinchillas</a>
+
+            <a href="adoption.html">Adoption</a>
+
+            <a href="donate.html">Donate</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- =========================
+     MAIN PAGE
+========================== -->
+
+<main class="page">
+
+    <div class="content">
+
+        <!-- PAGE TITLE -->
+
+        <div class="page-title">
+
+            <h2>Chinchilla Facts</h2>
+
+            <div class="decorative">
+                ♡ ❀ ♡
+            </div>
+
+        </div>
+
+        <!-- FACT 1 -->
+
+        <section class="fact-section">
+
+            <h3>Where Do Chinchillas Come From?</h3>
+
+            <p>
+                Chinchillas are native to the Andes Mountains of South
+                America, where they live in rocky, mountainous environments
+                at high elevations.
+            </p>
+
+            <p>
+                Wild chinchillas are naturally adapted to cooler, relatively
+                dry climates and spend much of their time hiding among rocks
+                and crevices.
+            </p>
+
+        </section>
+
+        <!-- FACT 2 -->
+
+        <section class="fact-section">
+
+            <h3>How Long Do Chinchillas Live?</h3>
+
+            <p>
+                With proper care, chinchillas can live for many years. A
+                well-cared-for chinchilla can commonly reach 15–20 years of
+                age, making them a long-term commitment.
+            </p>
+
+            <p>
+                Their long lifespan is one of the many reasons it is important
+                to carefully consider whether a chinchilla is the right
+                companion for your household.
+            </p>
+
+        </section>
+
+        <!-- FACT 3 -->
+
+        <section class="fact-section">
+
+            <h3>Those Amazing Fur Coats</h3>
+
+            <p>
+                Chinchillas have one of the densest fur coats of any land
+                mammal. Their incredibly soft fur helps protect them from the
+                cold temperatures of their natural mountain environment.
+            </p>
+
+            <p>
+                Because their fur is so dense, chinchillas should never be
+                bathed in water. Moisture can become trapped close to the skin
+                and cause problems with their coat and health.
+            </p>
+
+        </section>
+
+        <!-- FACT 4 -->
+
+        <section class="fact-section">
+
+            <h3>Why Do Chinchillas Take Dust Baths?</h3>
+
+            <p>
+                Instead of bathing in water, chinchillas clean their fur by
+                rolling around in specially formulated volcanic dust.
+            </p>
+
+            <p>
+                The fine dust reaches deep into their dense fur and absorbs
+                excess oils and moisture, helping keep their coat clean, soft
+                and healthy.
+            </p>
+
+        </section>
+
+        <!-- FACT 5 -->
+
+        <section class="fact-section">
+
+            <h3>Chinchillas Are Crepuscular</h3>
+
+            <p>
+                Chinchillas are generally most active during the evening and
+                early morning hours. They are often described as crepuscular,
+                meaning their activity tends to increase around dawn and dusk.
+            </p>
+
+            <p>
+                Individual chinchillas can still have different routines
+                depending on their environment and personality.
+            </p>
+
+        </section>
+
+        <!-- FACT 6 -->
+
+        <section class="fact-section">
+
+            <h3>They Are Excellent Jumpers</h3>
+
+            <p>
+                Chinchillas are incredibly agile and can jump surprisingly
+                high. Their strong hind legs allow them to move quickly between
+                rocks and different levels of their environment.
+            </p>
+
+            <p>
+                This is one reason chinchillas benefit from safe, appropriately
+                designed enclosures that allow them to climb, jump and explore.
+            </p>
+
+        </section>
+
+        <!-- FACT 7 -->
+
+        <section class="fact-section">
+
+            <h3>What Do Chinchillas Eat?</h3>
+
+            <p>
+                Chinchillas are herbivores and need a high-fibre diet
+                consisting of Timothy hay, appropriate chinchilla pellets and
+                fresh water.
+            </p>
+
+            <p>
+                Treats are not needed or necessary. Instead, offer safe chew
+                items such as apple sticks or other chinchilla-safe wood toys.
+            </p>
+
+        </section>
+
+        <!-- FACT 8 -->
+
+        <section class="fact-section">
+
+            <h3>Chinchilla Teeth Never Stop Growing</h3>
+
+            <p>
+                Like many rodents, chinchillas have continuously growing teeth.
+                Their teeth naturally wear down through chewing and eating
+                fibrous foods.
+            </p>
+
+            <p>
+                Providing appropriate safe chewing materials and a suitable
+                diet is therefore an important part of chinchilla care.
+            </p>
+
+        </section>
+
+        <!-- FACT 9 -->
+
+        <section class="fact-section">
+
+            <h3>They Are Very Social Animals</h3>
+
+            <p>
+                Chinchillas are naturally social animals and often enjoy the
+                company of other compatible chinchillas.
+            </p>
+
+            <p>
+                However, introductions should always be handled carefully and
+                individual personalities and compatibility need to be taken
+                into consideration.
+            </p>
+
+        </section>
+
+        <!-- FACT 10 -->
+
+        <section class="fact-section">
+
+            <h3>They Can't Sweat Like We Do</h3>
+
+            <p>
+                Chinchillas have very limited ability to cool themselves
+                because they don't have functional sweat glands like humans.
+                Their incredibly dense fur also makes overheating a serious
+                concern.
+            </p>
+
+        </section>
+
+    </div>
+
+</main>
+
+<!-- =========================
+     SOCIAL MEDIA
+========================== -->
+
+<section class="social-area">
+
+    <div class="social-divider"></div>
+
+    <div class="social-links">
+
+        <!-- FACEBOOK -->
+
+        <a
+            href="https://www.facebook.com/baeschinchillas"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+        >
+
+            <svg
+                class="social-icon facebook-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+
+                <circle cx="12" cy="12" r="11" />
+
+                <path
+                    class="facebook-f"
+                    d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
+                />
+
+            </svg>
+
+        </a>
+
+        <!-- INSTAGRAM -->
+
+        <a
+            href="https://www.instagram.com/baeschinchilla"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+        >
+
+            <svg
+                class="social-icon instagram-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+
+                <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="5"
+                />
+
+                <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                />
+
+                <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    class="instagram-dot"
+                />
+
+            </svg>
+
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

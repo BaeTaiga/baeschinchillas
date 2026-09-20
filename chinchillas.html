@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chinchillas | Bae's Chinchillas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --background: #FFB7C5;
+            --white: #FFFFFF;
+            --pink: #FFB7C5;
+            --heading: #ED8999;
+            --border: #ED7B8D;
+            --text: #4F4F4F;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #FFB7C5;
+            color: var(--text);
+            font-family: "Quicksand", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: #FFFFFF;
+            border-bottom: 2px solid #ED7B8D;
+            text-align: center;
+            padding: 28px 20px 0;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo-display {
+            width: 100%;
+            min-height: 145px;
+            display: grid;
+            grid-template-columns: 1fr 170px 1fr;
+            align-items: end;
+            gap: 20px;
+            margin: 0 auto 18px;
+        }
+
+        .logo-side {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 18px;
+            height: 135px;
+        }
+
+        .decorative-chinchilla {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+        }
+
+        /* LEFT SIDE */
+
+        .left-side .chinchilla-1 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        .left-side .chinchilla-2 {
+            width: 115px;
+            max-height: 105px;
+        }
+
+        .left-side .chinchilla-3 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        /* RIGHT SIDE */
+
+        .right-side .chinchilla-1 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        .right-side .chinchilla-2 {
+            width: 105px;
+            max-height: 115px;
+        }
+
+        .right-side .chinchilla-3 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        /* MAIN LOGO */
+
+        .main-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 140px;
+        }
+
+        .site-logo {
+            width: 150px;
+            height: auto;
+            max-height: 140px;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* WEBSITE NAME */
+
+        .brand-main {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            color: #ED8999;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .title-blossom {
+            color: #FFB7C5;
+            font-family: serif;
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 11px;
+            margin-top: 28px;
+            padding-bottom: 5px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 13px 25px;
+            color: #ED8999;
+            background: #FFF7F9;
+            border: 1px solid #ED7B8D;
+            border-radius: 18px;
+            font-size: 15px;
+            font-weight: 600;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background: #FFB7C5;
+            color: #FFFFFF;
+            transform: translateY(-1px);
+        }
+
+        nav a.active {
+            background: #FFB7C5;
+            color: #FFFFFF;
+        }
+
+        /* =========================
+           PAGE
+        ========================= */
+
+        .page {
+            width: 94%;
+            max-width: 1100px;
+            margin: 38px auto 0;
+        }
+
+        .content {
+            background: #FFFFFF;
+            border: 1px solid #ED7B8D;
+            border-radius: 70px;
+            padding: 55px 70px 65px;
+            box-shadow: 0 8px 25px rgba(237, 123, 141, 0.08);
+        }
+
+        /* =========================
+           TITLE
+        ========================= */
+
+        .page-title {
+            max-width: 850px;
+            margin: 0 auto 42px;
+            text-align: center;
+        }
+
+        .page-title h2 {
+            margin: 0;
+            color: #ED8999;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .decorative {
+            margin-top: 8px;
+            color: #FFB7C5;
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+
+        .page-subtitle {
+            margin: 18px 0 0;
+            color: #4F4F4F;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        .page-subtitle + .page-subtitle {
+            margin-top: 8px;
+        }
+
+        /* =========================
+           CHINCHILLA GROUPS
+        ========================= */
+
+        .chinchilla-groups {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+            align-items: start;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .gender-group {
+            min-width: 0;
+        }
+
+        .gender-heading {
+            margin: 0 0 5px;
+            color: #ED8999;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: center;
+        }
+
+        .gender-heart {
+            margin-bottom: 20px;
+            color: #FFB7C5;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .gender-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 22px;
+        }
+
+        /* =========================
+           CHINCHILLA CARDS
+        ========================= */
+
+        .chinchilla-card {
+            background: linear-gradient(135deg, #FFF8ED 0%, #FFB7C5 100%);
+            border: 1px solid #ED7B8D;
+            border-radius: 70px;
+            padding: 20px 20px 24px;
+            text-align: center;
+        }
+
+        .chinchilla-photo {
+            width: 86%;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFFFFF;
+            border: 1px dashed #ED7B8D;
+            border-radius: 45px;
+            color: #ED8999;
+            font-size: 14px;
+            margin: 15px auto 20px;
+        }
+
+        .chinchilla-card h4 {
+            margin: 0;
+            color: #ED8999;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .chinchilla-card .decorative {
+            margin-top: 5px;
+            margin-bottom: 13px;
+            font-size: 17px;
+            letter-spacing: 3px;
+        }
+
+        .chinchilla-details {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .chinchilla-details p {
+            margin: 0;
+        }
+
+        .chinchilla-details strong {
+            color: #ED8999;
+            font-weight: 600;
+        }
+
+        /* =========================
+           SOCIAL MEDIA
+        ========================= */
+
+        .social-area {
+            width: 100%;
+            margin-top: 22px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        .social-divider {
+            width: 900px;
+            height: 1px;
+            background: #ED7B8D;
+            margin: 0 auto 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ED8999;
+            text-decoration: none;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .social-link:hover {
+            color: #FFB7C5;
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .facebook-icon {
+            fill: #ED8999;
+        }
+
+        .facebook-f {
+            fill: #FFFFFF;
+        }
+
+        .instagram-icon {
+            fill: none;
+            stroke: #ED8999;
+            stroke-width: 1.8;
+        }
+
+        .instagram-dot {
+            fill: #ED8999;
+            stroke: none;
+        }
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .logo-display {
+                grid-template-columns: 1fr 145px 1fr;
+                gap: 10px;
+            }
+
+            .logo-side {
+                gap: 8px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 80px;
+                max-height: 100px;
+            }
+
+            .site-logo {
+                width: 135px;
+            }
+
+            .social-divider {
+                width: 90%;
+            }
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 650px) {
+
+            header {
+                padding-top: 22px;
+            }
+
+            .logo-display {
+                min-height: 105px;
+                grid-template-columns: 1fr 115px 1fr;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+
+            .logo-side {
+                height: 95px;
+                gap: 3px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 43px;
+                max-height: 70px;
+            }
+
+            .main-logo-container {
+                height: 105px;
+            }
+
+            .site-logo {
+                width: 110px;
+                max-height: 105px;
+            }
+
+            .brand-main {
+                gap: 9px;
+                font-size: 28px;
+            }
+
+            .title-blossom {
+                font-size: 26px;
+            }
+
+            nav {
+                gap: 6px;
+                margin-top: 22px;
+                padding-bottom: 5px;
+            }
+
+            nav a {
+                padding: 10px 14px;
+                font-size: 13px;
+                border-radius: 14px;
+            }
+
+            .page {
+                width: 94%;
+                margin-top: 28px;
+            }
+
+            .content {
+                border-radius: 55px;
+                padding: 38px 25px 45px;
+            }
+
+            .page-title {
+                margin-bottom: 35px;
+            }
+
+            .page-title h2 {
+                font-size: 26px;
+            }
+
+            .decorative {
+                font-size: 19px;
+                letter-spacing: 3px;
+            }
+
+            .page-subtitle {
+                margin-top: 16px;
+                font-size: 15px;
+            }
+
+            .page-subtitle + .page-subtitle {
+                margin-top: 7px;
+            }
+
+            .chinchilla-groups {
+                grid-template-columns: 1fr;
+                gap: 38px;
+            }
+
+            .gender-heading {
+                font-size: 21px;
+            }
+
+            .gender-heart {
+                margin-bottom: 18px;
+                font-size: 19px;
+            }
+
+            .gender-cards {
+                gap: 18px;
+            }
+
+            .chinchilla-card {
+                border-radius: 55px;
+                padding: 18px 18px 22px;
+            }
+
+            .chinchilla-photo {
+                width: 88%;
+                height: 170px;
+                margin: 15px auto 20px;
+                border-radius: 42px;
+            }
+
+            .chinchilla-card h4 {
+                font-size: 20px;
+            }
+
+            .social-area {
+                padding-bottom: 20px;
+            }
+
+            .social-divider {
+                width: 90%;
+                margin-bottom: 18px;
+            }
+
+            .social-links {
+                gap: 18px;
+            }
+
+            .social-link {
+                width: 34px;
+                height: 34px;
+            }
+
+            .social-icon {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        /* =========================
+           VERY SMALL PHONES
+        ========================= */
+
+        @media (max-width: 430px) {
+
+            .logo-display {
+                grid-template-columns: 1fr 110px 1fr;
+            }
+
+            .logo-side .chinchilla-1,
+            .logo-side .chinchilla-3 {
+                display: none;
+            }
+
+            .logo-side .chinchilla-2 {
+                width: 55px;
+                max-height: 75px;
+            }
+
+            .site-logo {
+                width: 105px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <div class="header-inner">
+
+        <div class="logo-display">
+
+            <!-- LEFT CHINCHILLAS -->
+
+            <div class="logo-side left-side">
+
+                <img
+                    src="chinchilla-right-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="chinchilla-right-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="chinchilla-right-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <!-- MAIN LOGO -->
+
+            <div class="main-logo-container">
+
+                <img
+                    src="logo-final.png"
+                    alt="Bae's Chinchillas logo"
+                    class="site-logo"
+                >
+
+            </div>
+
+            <!-- RIGHT CHINCHILLAS -->
+
+            <div class="logo-side right-side">
+
+                <img
+                    src="chinchilla-left-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="chinchilla-left-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="chinchilla-left-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+
+            </div>
+
+        </div>
+
+        <!-- WEBSITE NAME -->
+
+        <h1 class="brand-main">
+
+            <span class="title-blossom">❀</span>
+
+            <span>Bae's Chinchillas</span>
+
+            <span class="title-blossom">❀</span>
+
+        </h1>
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="fact.html">Fact</a>
+
+            <a href="care.html">Care</a>
+
+            <a href="chinchillas.html" class="active">Chinchillas</a>
+
+            <a href="adoption.html">Adoption</a>
+
+            <a href="donate.html">Donate</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- =========================
+     MAIN PAGE
+========================== -->
+
+<main class="page">
+
+    <div class="content">
+
+        <!-- =========================
+             OUR CHINCHILLAS
+        ========================== -->
+
+        <section class="page-title">
+
+            <h2>Our Chinchillas</h2>
+
+            <div class="decorative">
+                ♡ ❀ ♡
+            </div>
+
+            <p class="page-subtitle">
+                Meet the heart of Bae's Chinchillas.
+            </p>
+
+            <p class="page-subtitle">
+                Here you'll find some of the chinchillas currently in our care.
+            </p>
+
+        </section>
+
+        <!-- =========================
+             CHINCHILLA PROFILES
+        ========================== -->
+
+        <section class="chinchilla-groups">
+
+            <!-- FEMALES -->
+
+            <div class="gender-group">
+
+                <h3 class="gender-heading">
+                    Females
+                </h3>
+
+                <div class="gender-heart">
+                    ♡
+                </div>
+
+                <div class="gender-cards">
+
+                    <!-- FEMALE 1 -->
+
+                    <article class="chinchilla-card">
+
+                        <div class="chinchilla-photo">
+                            Chinchilla Photo
+                        </div>
+
+                        <h4>
+                            Chinchilla Name
+                        </h4>
+
+                        <div class="decorative">
+                            ♡
+                        </div>
+
+                        <div class="chinchilla-details">
+
+                            <p>
+                                <strong>Mutation:</strong>
+                            </p>
+
+                            <p>
+                                <strong>Mother:</strong>
+                            </p>
+
+                            <p>
+                                <strong>Father:</strong>
+                            </p>
+
+                            <p>
+                                <strong>Date of Birth:</strong>
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- FEMALE 2 -->
+
+                    <article class="chinchilla-card">
+
+                        <div class="chinchilla-photo">
+                            Chinchilla Photo
+                        </div>
+
+                        <h4>
+                            Chinchilla Name
+                        </h4>
+
+                        <div class="decorative">
+                            ♡
+                        </div>
+
+                        <div class="chinchilla-details">
+
+                            <p>
+                                <strong>Mutation:</strong>
+                            </p>
+
+                            <p>
+                                <strong>Mother:</strong>
+                            </p>
+
+                            <p>
+                                <strong>Father:</strong>
+                            </p>
+
+                            <p>
+                                <strong>Date of Birth:</strong>
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!-- MALES -->
+
+            <div class="gender-group">
+
+                <h3 class="gender-heading">
+                    Males
+                </h3>
+
+                <div class="gender-heart">
+                    ♡
+                </div>
+
+                <div class="gender-cards">
+
+                    <!-- GRIFFIN -->
+
+                    <article class="chinchilla-card">
+
+                        <div class="chinchilla-photo">
+                            Chinchilla Photo
+                        </div>
+
+                        <h4>
+                            SE*Lavender's Griffin
+                        </h4>
+
+                        <div class="decorative">
+                            ♡
+                        </div>
+
+                        <div class="chinchilla-details">
+
+                            <p>
+                                <strong>Mutation:</strong> Beige, RPA
+                            </p>
+
+                            <p>
+                                <strong>Mother:</strong> S*Lavender's Delphia
+                            </p>
+
+                            <p>
+                                <strong>Father:</strong> La Vida's Multiply
+                            </p>
+
+                            <p>
+                                <strong>Date of Birth:</strong> 2020.08.04
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ALASKA -->
+
+                    <article class="chinchilla-card">
+
+                        <div class="chinchilla-photo">
+                            Chinchilla Photo
+                        </div>
+
+                        <h4>
+                            S*Pepita's Alaska
+                        </h4>
+
+                        <div class="decorative">
+                            ♡
+                        </div>
+
+                        <div class="chinchilla-details">
+
+                            <p>
+                                <strong>Mutation:</strong> White Ebony
+                            </p>
+
+                            <p>
+                                <strong>Mother:</strong> Åsarna's Flizan
+                            </p>
+
+                            <p>
+                                <strong>Father:</strong> S*Pepita's Heino
+                            </p>
+
+                            <p>
+                                <strong>Date of Birth:</strong> 2016.12.20
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+<!-- =========================
+     SOCIAL MEDIA
+========================== -->
+
+<section class="social-area">
+
+    <div class="social-divider"></div>
+
+    <div class="social-links">
+
+        <!-- FACEBOOK -->
+
+        <a
+            href="https://www.facebook.com/baeschinchillas"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+        >
+
+            <svg
+                class="social-icon facebook-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+
+                <circle cx="12" cy="12" r="11" />
+
+                <path
+                    class="facebook-f"
+                    d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
+                />
+
+            </svg>
+
+        </a>
+
+        <!-- INSTAGRAM -->
+
+        <a
+            href="https://www.instagram.com/baeschinchilla"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+        >
+
+            <svg
+                class="social-icon instagram-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+
+                <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="5"
+                />
+
+                <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                />
+
+                <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    class="instagram-dot"
+                />
+
+            </svg>
+
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>
