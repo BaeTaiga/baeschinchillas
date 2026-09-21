@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bae's Chinchillas | Chinchillauppfödning i Sverige</title>
+
+    <meta
+        name="description"
+        content="Bae's Chinchillas är en liten chinchillauppfödning utanför Kungälv i Västra Götalands län med fokus på friska, trevliga chinchillor, Royal Persian Angora (RPA), Ebony och ansvarsfull chinchillaskötsel."
+    >
+
+    <link rel="canonical" href="https://baeschinchillas.se/">
+
+    <link
+        rel="alternate"
+        hreflang="sv"
+        href="https://baeschinchillas.se/"
+    >
+    <link
+        rel="alternate"
+        hreflang="en"
+        href="https://baeschinchillas.se/en/"
+    >
+    <link
+        rel="alternate"
+        hreflang="x-default"
+        href="https://baeschinchillas.se/"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --background: #FFB7C5;
+            --white: #FFFFFF;
+            --pink: #FFB7C5;
+            --heading: #ED8999;
+            --border: #ED7B8D;
+            --text: #4F4F4F;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #FFB7C5;
+            color: var(--text);
+            font-family: "Quicksand", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: relative;
+            background: #FFFFFF;
+            border-bottom: 2px solid #ED7B8D;
+            text-align: center;
+            padding: 28px 20px 0;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* =========================
+           LANGUAGE SELECTOR
+        ========================= */
+
+        .language-selector {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            z-index: 10;
+        }
+
+        .language-selector a {
+            color: #ED8999;
+            transition: color 0.2s ease;
+        }
+
+        .language-selector a:hover {
+            color: #FFB7C5;
+        }
+
+        .language-selector a.active-language {
+            color: #ED7B8D;
+            font-weight: 700;
+        }
+
+        .language-divider {
+            color: #FFB7C5;
+            font-weight: 500;
+        }
+
+        .logo-display {
+            width: 100%;
+            min-height: 145px;
+            display: grid;
+            grid-template-columns: 1fr 170px 1fr;
+            align-items: end;
+            gap: 20px;
+            margin: 0 auto 18px;
+        }
+
+        .logo-side {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 18px;
+            height: 135px;
+        }
+
+        .decorative-chinchilla {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+        }
+
+        /* LEFT SIDE */
+
+        .left-side .chinchilla-1 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        .left-side .chinchilla-2 {
+            width: 115px;
+            max-height: 105px;
+        }
+
+        .left-side .chinchilla-3 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        /* RIGHT SIDE */
+
+        .right-side .chinchilla-1 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        .right-side .chinchilla-2 {
+            width: 105px;
+            max-height: 115px;
+        }
+
+        .right-side .chinchilla-3 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        /* MAIN LOGO */
+
+        .main-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 140px;
+        }
+
+        .site-logo {
+            width: 150px;
+            height: auto;
+            max-height: 140px;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* WEBSITE NAME */
+
+        .brand-main {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            color: #ED8999;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .title-blossom {
+            color: #FFB7C5;
+            font-family: serif;
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 11px;
+            margin-top: 28px;
+            padding-bottom: 5px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 13px 25px;
+            color: #ED8999;
+            background: #FFF7F9;
+            border: 1px solid #ED7B8D;
+            border-radius: 18px;
+            font-size: 15px;
+            font-weight: 600;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background: #FFB7C5;
+            color: #FFFFFF;
+            transform: translateY(-1px);
+        }
+
+        nav a.active {
+            background: #FFB7C5;
+            color: #FFFFFF;
+        }
+
+        /* =========================
+           PAGE
+        ========================= */
+
+        .page {
+            width: 94%;
+            max-width: 1100px;
+            margin: 38px auto 0;
+        }
+
+        .content {
+            background: #FFFFFF;
+            border: 1px solid #ED7B8D;
+            border-radius: 70px;
+            padding: 55px 70px 65px;
+            box-shadow: 0 8px 25px rgba(237, 123, 141, 0.08);
+        }
+
+        /* =========================
+           TOP PHOTOS
+        ========================= */
+
+        .top-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            margin-bottom: 42px;
+        }
+
+        .top-image {
+            width: 100%;
+            height: 250px;
+            display: block;
+            object-fit: cover;
+            object-position: center center;
+            border: 1px solid #ED7B8D;
+            border-radius: 28px;
+        }
+
+        /* =========================
+           ABOUT US
+        ========================= */
+
+        .about-section {
+            max-width: 850px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            margin: 0;
+            color: #ED8999;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .decorative {
+            margin-top: 8px;
+            color: #FFB7C5;
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+
+        .about-text {
+            margin-top: 28px;
+        }
+
+        .about-text p {
+            margin: 0 0 20px;
+        }
+
+        .about-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           LOWER PHOTOS
+        ========================= */
+
+        .three-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .lower-image,
+        .image-placeholder {
+            width: 100%;
+            height: 210px;
+            border: 1px solid #ED7B8D;
+            border-radius: 24px;
+        }
+
+        .lower-image {
+            display: block;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .image-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFF7F9;
+            border-style: dashed;
+            color: #ED8999;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        /* =========================
+           SOCIAL MEDIA
+        ========================= */
+
+        .social-area {
+            width: 100%;
+            margin-top: 22px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        .social-divider {
+            width: 900px;
+            height: 1px;
+            background: #ED7B8D;
+            margin: 0 auto 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ED8999;
+            text-decoration: none;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .social-link:hover {
+            color: #FFB7C5;
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .facebook-icon {
+            fill: #ED8999;
+        }
+
+        .facebook-f {
+            fill: #FFFFFF;
+        }
+
+        .instagram-icon {
+            fill: none;
+            stroke: #ED8999;
+            stroke-width: 1.8;
+        }
+
+        .instagram-dot {
+            fill: #ED8999;
+            stroke: none;
+        }
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .logo-display {
+                grid-template-columns: 1fr 145px 1fr;
+                gap: 10px;
+            }
+
+            .logo-side {
+                gap: 8px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 80px;
+                max-height: 100px;
+            }
+
+            .site-logo {
+                width: 135px;
+            }
+
+            .social-divider {
+                width: 90%;
+            }
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 650px) {
+
+            header {
+                padding-top: 50px;
+            }
+
+            .language-selector {
+                top: 16px;
+                right: 20px;
+                font-size: 12px;
+            }
+
+            .logo-display {
+                min-height: 105px;
+                grid-template-columns: 1fr 115px 1fr;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+
+            .logo-side {
+                height: 95px;
+                gap: 3px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 43px;
+                max-height: 70px;
+            }
+
+            .main-logo-container {
+                height: 105px;
+            }
+
+            .site-logo {
+                width: 110px;
+                max-height: 105px;
+            }
+
+            .brand-main {
+                gap: 9px;
+                font-size: 28px;
+            }
+
+            .title-blossom {
+                font-size: 26px;
+            }
+
+            nav {
+                gap: 6px;
+                margin-top: 22px;
+                padding-bottom: 5px;
+            }
+
+            nav a {
+                padding: 10px 14px;
+                font-size: 13px;
+                border-radius: 14px;
+            }
+
+            .page {
+                width: 94%;
+                margin-top: 28px;
+            }
+
+            .content {
+                border-radius: 55px;
+                padding: 38px 25px 45px;
+            }
+
+            .top-images {
+                grid-template-columns: 1fr;
+                gap: 18px;
+                margin-bottom: 38px;
+            }
+
+            .top-image {
+                height: 230px;
+                border-radius: 24px;
+            }
+
+            .about-section {
+                margin-bottom: 40px;
+            }
+
+            .about-section h2 {
+                font-size: 26px;
+            }
+
+            .decorative {
+                font-size: 19px;
+                letter-spacing: 3px;
+            }
+
+            .about-text {
+                margin-top: 24px;
+            }
+
+            .three-images {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .lower-image,
+            .image-placeholder {
+                height: 220px;
+                border-radius: 22px;
+            }
+
+            .social-area {
+                padding-bottom: 20px;
+            }
+
+            .social-divider {
+                width: 90%;
+                margin-bottom: 18px;
+            }
+
+            .social-links {
+                gap: 18px;
+            }
+
+            .social-link {
+                width: 34px;
+                height: 34px;
+            }
+
+            .social-icon {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        /* =========================
+           VERY SMALL PHONES
+        ========================= */
+
+        @media (max-width: 430px) {
+
+            .language-selector {
+                right: 15px;
+            }
+
+            .logo-display {
+                grid-template-columns: 1fr 110px 1fr;
+            }
+
+            .logo-side .chinchilla-1,
+            .logo-side .chinchilla-3 {
+                display: none;
+            }
+
+            .logo-side .chinchilla-2 {
+                width: 55px;
+                max-height: 75px;
+            }
+
+            .site-logo {
+                width: 105px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <!-- LANGUAGE SELECTOR -->
+
+    <div class="language-selector" aria-label="Språkval">
+
+        <a
+            href="../en/index.html"
+            lang="en"
+            hreflang="en"
+        >English</a>
+
+        <span class="language-divider">|</span>
+
+        <a
+            href="index.html"
+            class="active-language"
+            lang="sv"
+            hreflang="sv"
+        >Swedish</a>
+
+    </div>
+
+    <div class="header-inner">
+
+        <div class="logo-display">
+
+            <!-- LEFT CHINCHILLAS -->
+
+            <div class="logo-side left-side">
+
+                <img
+                    src="../logos/chinchilla-right-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="../logos/chinchilla-right-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="../logos/chinchilla-right-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <!-- MAIN LOGO -->
+
+            <div class="main-logo-container">
+
+                <img
+                    src="../logos/logo-final.png"
+                    alt="Bae's Chinchillas logotyp"
+                    class="site-logo"
+                >
+
+            </div>
+
+            <!-- RIGHT CHINCHILLAS -->
+
+            <div class="logo-side right-side">
+
+                <img
+                    src="../logos/chinchilla-left-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="../logos/chinchilla-left-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="../logos/chinchilla-left-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+
+            </div>
+
+        </div>
+
+        <!-- WEBSITE NAME -->
+
+        <h1 class="brand-main">
+
+            <span class="title-blossom">❀</span>
+
+            <span>Bae's Chinchillas</span>
+
+            <span class="title-blossom">❀</span>
+
+        </h1>
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="index.html" class="active">Hem</a>
+
+            <a href="fact.html">Fakta</a>
+
+            <a href="care.html">Skötsel</a>
+
+            <a href="chinchillas.html">Chinchillor</a>
+
+            <a href="adoption.html">Adoptera</a>
+
+            <a href="donate.html">Donera</a>
+
+            <a href="contact.html">Kontakt</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- =========================
+     MAIN PAGE
+========================== -->
+
+<main class="page">
+
+    <div class="content">
+
+        <!-- TOP CHINCHILLA PHOTOS -->
+
+        <div class="top-images">
+
+            <img
+                src="../images/Griffin.png"
+                alt="Chinchillan Griffin"
+                class="top-image"
+            >
+
+            <img
+                src="../images/Alaska.png"
+                alt="Chinchillan Alaska"
+                class="top-image"
+            >
+
+        </div>
+
+        <!-- =========================
+             OM OSS
+        ========================== -->
+
+        <section class="about-section">
+
+            <h2>om oss</h2>
+
+            <div class="decorative">
+                ♡ ❀ ♡
+            </div>
+
+            <div class="about-text">
+
+                <p>
+                    Bae's Chinchillas är en liten uppfödning belägen strax
+                    utanför Kungälv i Västra Götalands län.
+                </p>
+
+                <p>
+                    Vårt mål med aveln är att föda upp friska, trevliga
+                    chinchillor med god kvalitet och ett fint temperament.
+                    Vi fokuserar för närvarande främst på mutationerna
+                    Royal Persian Angora (RPA) och Ebony.
+                </p>
+
+                <p>
+                    Vid sidan av vår uppfödning tar vi även emot chinchillor
+                    som av olika anledningar behöver omplaceras och hjälper
+                    dem att hitta nya, kärleksfulla och permanenta hem.
+                    För oss är det viktigt att varje chinchilla får komma
+                    till ett tryggt och ansvarsfullt hem där den får den
+                    omsorg och kärlek den förtjänar.
+                </p>
+
+                <p>
+                    Om du vill skaffa en chinchilla är det viktigt att du
+                    först läser på ordentligt om deras behov och skötsel.
+                    Att ha en chinchilla är ett långsiktigt ansvar och
+                    innebär att vara beredd att ge den rätt omsorg under
+                    hela dess liv, vilket kan vara uppemot 20 år och mer.
+                    Här på vår hemsida hittar du information som hjälper
+                    dig att lära dig mer om chinchillor och vad som krävs
+                    för att ge dem ett tryggt, hälsosamt och bra liv.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- LOWER PHOTOS -->
+
+        <div class="three-images">
+
+            <img
+                src="../images/Alaska 2.png"
+                alt="Chinchillan Alaska"
+                class="lower-image"
+            >
+
+            <div class="image-placeholder">
+                Chinchillabild
+            </div>
+
+            <div class="image-placeholder">
+                Chinchillabild
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<!-- =========================
+     SOCIAL MEDIA
+========================== -->
+
+<section class="social-area">
+
+    <div class="social-divider"></div>
+
+    <div class="social-links">
+
+        <!-- FACEBOOK -->
+
+        <a
+            href="https://www.facebook.com/baeschinchillas"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+        >
+
+            <svg
+                class="social-icon facebook-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+
+                <circle cx="12" cy="12" r="11" />
+
+                <path
+                    class="facebook-f"
+                    d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
+                />
+
+            </svg>
+
+        </a>
+
+        <!-- INSTAGRAM -->
+
+        <a
+            href="https://www.instagram.com/baeschinchilla"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+        >
+
+            <svg
+                class="social-icon instagram-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+
+                <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="5"
+                />
+
+                <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                />
+
+                <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    class="instagram-dot"
+                />
+
+            </svg>
+
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>
