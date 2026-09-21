@@ -51,10 +51,43 @@
         ========================= */
 
         header {
+            position: relative;
             background: #FFFFFF;
             border-bottom: 2px solid #ED7B8D;
             text-align: center;
             padding: 28px 20px 0;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            z-index: 10;
+        }
+
+        .language-selector a {
+            color: #ED8999;
+            transition: color 0.2s ease;
+        }
+
+        .language-selector a:hover {
+            color: #FFB7C5;
+        }
+
+        .language-selector a.active-language {
+            color: #ED7B8D;
+            font-weight: 700;
+        }
+
+        .language-divider {
+            color: #FFB7C5;
+            font-weight: 500;
         }
 
         .header-inner {
@@ -461,7 +494,13 @@
         @media (max-width: 650px) {
 
             header {
-                padding-top: 22px;
+                padding-top: 50px;
+            }
+
+            .language-selector {
+                top: 16px;
+                right: 20px;
+                font-size: 12px;
             }
 
             .logo-display {
@@ -612,6 +651,10 @@
 
         @media (max-width: 430px) {
 
+            .language-selector {
+                right: 15px;
+            }
+
             .logo-display {
                 grid-template-columns: 1fr 110px 1fr;
             }
@@ -636,17 +679,28 @@
 
 <body>
 
-<!-- =========================
-     HEADER
-========================== -->
-
 <header>
+
+    <div class="language-selector" aria-label="Language selector">
+        <a
+            href="chinchillas.html"
+            class="active-language"
+            lang="en"
+            hreflang="en"
+        >English</a>
+
+        <span class="language-divider">|</span>
+
+        <a
+            href="sv/chinchillas.html"
+            lang="sv"
+            hreflang="sv"
+        >Swedish</a>
+    </div>
 
     <div class="header-inner">
 
         <div class="logo-display">
-
-            <!-- LEFT CHINCHILLAS -->
 
             <div class="logo-side left-side">
 
@@ -673,8 +727,6 @@
 
             </div>
 
-            <!-- MAIN LOGO -->
-
             <div class="main-logo-container">
 
                 <img
@@ -684,8 +736,6 @@
                 >
 
             </div>
-
-            <!-- RIGHT CHINCHILLAS -->
 
             <div class="logo-side right-side">
 
@@ -714,53 +764,29 @@
 
         </div>
 
-        <!-- WEBSITE NAME -->
-
         <h1 class="brand-main">
-
             <span class="title-blossom">❀</span>
-
             <span>Bae's Chinchillas</span>
-
             <span class="title-blossom">❀</span>
-
         </h1>
 
-        <!-- NAVIGATION -->
-
         <nav>
-
             <a href="index.html">Home</a>
-
             <a href="fact.html">Fact</a>
-
             <a href="care.html">Care</a>
-
             <a href="chinchillas.html" class="active">Chinchillas</a>
-
             <a href="adoption.html">Adoption</a>
-
             <a href="donate.html">Donate</a>
-
             <a href="contact.html">Contact</a>
-
         </nav>
 
     </div>
 
 </header>
 
-<!-- =========================
-     MAIN PAGE
-========================== -->
-
 <main class="page">
 
     <div class="content">
-
-        <!-- =========================
-             OUR CHINCHILLAS
-        ========================== -->
 
         <section class="page-title">
 
@@ -780,10 +806,6 @@
 
         </section>
 
-        <!-- =========================
-             CHINCHILLA PROFILES
-        ========================== -->
-
         <section class="chinchilla-groups">
 
             <!-- FEMALES -->
@@ -799,8 +821,6 @@
                 </div>
 
                 <div class="gender-cards">
-
-                    <!-- FEMALE 1 -->
 
                     <article class="chinchilla-card">
 
@@ -837,8 +857,6 @@
                         </div>
 
                     </article>
-
-                    <!-- FEMALE 2 -->
 
                     <article class="chinchilla-card">
 
@@ -980,17 +998,11 @@
 
 </main>
 
-<!-- =========================
-     SOCIAL MEDIA
-========================== -->
-
 <section class="social-area">
 
     <div class="social-divider"></div>
 
     <div class="social-links">
-
-        <!-- FACEBOOK -->
 
         <a
             href="https://www.facebook.com/baeschinchillas"
@@ -999,25 +1011,19 @@
             rel="noopener noreferrer"
             aria-label="Facebook"
         >
-
             <svg
                 class="social-icon facebook-icon"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
             >
-
                 <circle cx="12" cy="12" r="11" />
 
                 <path
                     class="facebook-f"
                     d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
                 />
-
             </svg>
-
         </a>
-
-        <!-- INSTAGRAM -->
 
         <a
             href="https://www.instagram.com/baeschinchilla"
@@ -1026,13 +1032,11 @@
             rel="noopener noreferrer"
             aria-label="Instagram"
         >
-
             <svg
                 class="social-icon instagram-icon"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
             >
-
                 <rect
                     x="3"
                     y="3"
@@ -1053,9 +1057,7 @@
                     r="1"
                     class="instagram-dot"
                 />
-
             </svg>
-
         </a>
 
     </div>
