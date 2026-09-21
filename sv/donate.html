@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donera | Bae's Chinchillas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --background: #FFB7C5;
+            --white: #FFFFFF;
+            --pink: #FFB7C5;
+            --heading: #ED8999;
+            --border: #ED7B8D;
+            --text: #4F4F4F;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #FFB7C5;
+            color: var(--text);
+            font-family: "Quicksand", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: relative;
+            background: #FFFFFF;
+            border-bottom: 2px solid #ED7B8D;
+            text-align: center;
+            padding: 28px 20px 0;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            z-index: 10;
+        }
+
+        .language-selector a {
+            color: #ED8999;
+            transition: color 0.2s ease;
+        }
+
+        .language-selector a:hover {
+            color: #FFB7C5;
+        }
+
+        .language-selector a.active-language {
+            color: #ED7B8D;
+            font-weight: 700;
+        }
+
+        .language-divider {
+            color: #FFB7C5;
+            font-weight: 500;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo-display {
+            width: 100%;
+            min-height: 145px;
+            display: grid;
+            grid-template-columns: 1fr 170px 1fr;
+            align-items: end;
+            gap: 20px;
+            margin: 0 auto 18px;
+        }
+
+        .logo-side {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 18px;
+            height: 135px;
+        }
+
+        .decorative-chinchilla {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+        }
+
+        .left-side .chinchilla-1 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        .left-side .chinchilla-2 {
+            width: 115px;
+            max-height: 105px;
+        }
+
+        .left-side .chinchilla-3 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        .right-side .chinchilla-1 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        .right-side .chinchilla-2 {
+            width: 105px;
+            max-height: 115px;
+        }
+
+        .right-side .chinchilla-3 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        .main-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 140px;
+        }
+
+        .site-logo {
+            width: 150px;
+            height: auto;
+            max-height: 140px;
+            display: block;
+            object-fit: contain;
+        }
+
+        .brand-main {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            color: #ED8999;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .title-blossom {
+            color: #FFB7C5;
+            font-family: serif;
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 11px;
+            margin-top: 28px;
+            padding-bottom: 5px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 13px 25px;
+            color: #ED8999;
+            background: #FFF7F9;
+            border: 1px solid #ED7B8D;
+            border-radius: 18px;
+            font-size: 15px;
+            font-weight: 600;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background: #FFB7C5;
+            color: #FFFFFF;
+            transform: translateY(-1px);
+        }
+
+        nav a.active {
+            background: #FFB7C5;
+            color: #FFFFFF;
+        }
+
+        /* =========================
+           PAGE
+        ========================= */
+
+        .page {
+            width: 94%;
+            max-width: 1100px;
+            margin: 38px auto 0;
+        }
+
+        .content {
+            background: #FFFFFF;
+            border: 1px solid #ED7B8D;
+            border-radius: 70px;
+            padding: 55px 70px 65px;
+            box-shadow: 0 8px 25px rgba(237, 123, 141, 0.08);
+        }
+
+        /* =========================
+           PAGE TITLE
+        ========================= */
+
+        .page-title {
+            max-width: 850px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+
+        .page-title h2 {
+            margin: 0;
+            color: #ED8999;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .decorative {
+            margin-top: 8px;
+            color: #FFB7C5;
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+
+        .intro-text {
+            margin-top: 28px;
+        }
+
+        .intro-text p {
+            margin: 0;
+        }
+
+        /* =========================
+           DONATION SECTIONS
+        ========================= */
+
+        .donate-section {
+            max-width: 850px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+
+        .donate-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .donate-section h3 {
+            margin: 0;
+            color: #ED8999;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .donate-section > .decorative {
+            margin-bottom: 24px;
+        }
+
+        .donate-section p {
+            margin: 0 0 20px;
+        }
+
+        .donate-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           DONATION LIST
+        ========================= */
+
+        .donation-list {
+            max-width: 760px;
+            margin: 28px auto 0;
+            text-align: left;
+        }
+
+        .donation-item {
+            margin-bottom: 20px;
+        }
+
+        .donation-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .donation-item h4 {
+            margin: 0 0 3px;
+            color: #ED8999;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .donation-item p {
+            margin: 0;
+        }
+
+        /* =========================
+           PAYPAL
+        ========================= */
+
+        .paypal-box {
+            margin-top: 28px;
+            padding: 30px;
+            background: #FFF7F9;
+            border: 1px solid #ED7B8D;
+            border-radius: 28px;
+            text-align: center;
+        }
+
+        .paypal-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 26px;
+            background: #FFB7C5;
+            border: 1px solid #ED7B8D;
+            border-radius: 18px;
+            color: #FFFFFF;
+            font-size: 15px;
+            font-weight: 700;
+            transition:
+                background-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .paypal-button:hover {
+            background: #ED8999;
+            transform: translateY(-1px);
+        }
+
+        /* =========================
+           SOCIAL MEDIA
+        ========================= */
+
+        .social-area {
+            width: 100%;
+            margin-top: 22px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        .social-divider {
+            width: 900px;
+            height: 1px;
+            background: #ED7B8D;
+            margin: 0 auto 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ED8999;
+            text-decoration: none;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .social-link:hover {
+            color: #FFB7C5;
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .facebook-icon {
+            fill: #ED8999;
+        }
+
+        .facebook-f {
+            fill: #FFFFFF;
+        }
+
+        .instagram-icon {
+            fill: none;
+            stroke: #ED8999;
+            stroke-width: 1.8;
+        }
+
+        .instagram-dot {
+            fill: #ED8999;
+            stroke: none;
+        }
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .logo-display {
+                grid-template-columns: 1fr 145px 1fr;
+                gap: 10px;
+            }
+
+            .logo-side {
+                gap: 8px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 80px;
+                max-height: 100px;
+            }
+
+            .site-logo {
+                width: 135px;
+            }
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 650px) {
+
+            header {
+                padding-top: 50px;
+            }
+
+            .language-selector {
+                top: 16px;
+                right: 20px;
+                font-size: 12px;
+            }
+
+            .logo-display {
+                min-height: 105px;
+                grid-template-columns: 1fr 115px 1fr;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+
+            .logo-side {
+                height: 95px;
+                gap: 3px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 43px;
+                max-height: 70px;
+            }
+
+            .main-logo-container {
+                height: 105px;
+            }
+
+            .site-logo {
+                width: 110px;
+                max-height: 105px;
+            }
+
+            .brand-main {
+                gap: 9px;
+                font-size: 28px;
+            }
+
+            .title-blossom {
+                font-size: 26px;
+            }
+
+            nav {
+                gap: 6px;
+                margin-top: 22px;
+                padding-bottom: 5px;
+            }
+
+            nav a {
+                padding: 10px 14px;
+                font-size: 13px;
+                border-radius: 14px;
+            }
+
+            .page {
+                width: 94%;
+                margin-top: 28px;
+            }
+
+            .content {
+                border-radius: 55px;
+                padding: 38px 25px 45px;
+            }
+
+            .page-title {
+                margin-bottom: 38px;
+            }
+
+            .page-title h2 {
+                font-size: 26px;
+            }
+
+            .decorative {
+                font-size: 19px;
+                letter-spacing: 3px;
+            }
+
+            .intro-text {
+                margin-top: 24px;
+            }
+
+            .donate-section {
+                margin-bottom: 38px;
+            }
+
+            .donate-section h3 {
+                font-size: 23px;
+            }
+
+            .donation-list {
+                margin-top: 25px;
+            }
+
+            .donation-item h4 {
+                font-size: 16px;
+            }
+
+            .paypal-box {
+                padding: 25px 20px;
+                border-radius: 24px;
+            }
+
+            .paypal-button {
+                padding: 12px 22px;
+                border-radius: 16px;
+            }
+
+            .social-area {
+                padding-bottom: 20px;
+            }
+
+            .social-divider {
+                width: 90%;
+                margin-bottom: 18px;
+            }
+
+            .social-links {
+                gap: 18px;
+            }
+
+            .social-link {
+                width: 34px;
+                height: 34px;
+            }
+
+            .social-icon {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        /* =========================
+           VERY SMALL PHONES
+        ========================= */
+
+        @media (max-width: 430px) {
+
+            .language-selector {
+                right: 15px;
+            }
+
+            .logo-display {
+                grid-template-columns: 1fr 110px 1fr;
+            }
+
+            .logo-side .chinchilla-1,
+            .logo-side .chinchilla-3 {
+                display: none;
+            }
+
+            .logo-side .chinchilla-2 {
+                width: 55px;
+                max-height: 75px;
+            }
+
+            .site-logo {
+                width: 105px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="language-selector" aria-label="Språkval">
+        <a
+            href="../donate.html"
+            lang="en"
+            hreflang="en"
+        >English</a>
+
+        <span class="language-divider">|</span>
+
+        <a
+            href="donate.html"
+            class="active-language"
+            lang="sv"
+            hreflang="sv"
+        >Swedish</a>
+    </div>
+
+    <div class="header-inner">
+
+        <div class="logo-display">
+
+            <div class="logo-side left-side">
+                <img src="../chinchilla-right-1.png" alt="" class="decorative-chinchilla chinchilla-1" aria-hidden="true">
+                <img src="../chinchilla-right-2.png" alt="" class="decorative-chinchilla chinchilla-2" aria-hidden="true">
+                <img src="../chinchilla-right-3.png" alt="" class="decorative-chinchilla chinchilla-3" aria-hidden="true">
+            </div>
+
+            <div class="main-logo-container">
+                <img
+                    src="../logo-final.png"
+                    alt="Bae's Chinchillas logotyp"
+                    class="site-logo"
+                >
+            </div>
+
+            <div class="logo-side right-side">
+                <img src="../chinchilla-left-1.png" alt="" class="decorative-chinchilla chinchilla-1" aria-hidden="true">
+                <img src="../chinchilla-left-2.png" alt="" class="decorative-chinchilla chinchilla-2" aria-hidden="true">
+                <img src="../chinchilla-left-3.png" alt="" class="decorative-chinchilla chinchilla-3" aria-hidden="true">
+            </div>
+
+        </div>
+
+        <h1 class="brand-main">
+            <span class="title-blossom">❀</span>
+            <span>Bae's Chinchillas</span>
+            <span class="title-blossom">❀</span>
+        </h1>
+
+        <nav>
+            <a href="index.html">Hem</a>
+            <a href="fact.html">Fakta</a>
+            <a href="care.html">Skötsel</a>
+            <a href="chinchillas.html">Chinchillor</a>
+            <a href="adoption.html">Adoptera</a>
+            <a href="donate.html" class="active">Donera</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<main class="page">
+
+    <div class="content">
+
+        <section class="page-title">
+
+            <h2>Varje Bidrag Gör Skillnad</h2>
+
+            <div class="decorative">
+                ♡ ❀ ♡
+            </div>
+
+            <div class="intro-text">
+
+                <p>
+                    Donationer är aldrig något vi förväntar oss, men de är
+                    alltid mycket uppskattade. Oavsett om bidraget är stort
+                    eller litet gör varje donation skillnad.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="donate-section">
+
+            <h3>Varför Donera?</h3>
+
+            <div class="decorative">
+                ♡ ❀ ♡
+            </div>
+
+            <p>
+                Vi på Bae's Chinchillas gör vårt bästa för att ta emot
+                chinchillor som är i behov av nya hem.
+            </p>
+
+            <p>
+                Varje omplaceringschinchilla som kommer till oss får en trygg
+                miljö, rätt kost, berikning och allt annat den behöver medan
+                vi arbetar för att hitta rätt permanenta hem. Vissa
+                chinchillor stannar bara hos oss under en kortare period,
+                medan andra kan behöva stanna betydligt längre.
+            </p>
+
+            <p>
+                Att ta emot omplaceringschinchillor innebär ytterligare
+                kostnader, och donationer hjälper oss att tillhandahålla
+                maten, utrustningen, boendet och omsorgen de behöver under
+                tiden hos oss. Ditt stöd hjälper oss att fortsätta ge
+                chinchillor i behov av ett nytt hem en trygg plats att bo
+                på medan de väntar på sina permanenta hem.
+            </p>
+
+            <p>
+                Donationer är aldrig något vi förväntar oss, men varje
+                bidrag, oavsett storlek, är mycket uppskattat och gör en
+                betydelsefull skillnad för chinchillorna och
+                omplaceringschinchillorna i vår omsorg.
+            </p>
+
+        </section>
+
+        <section class="donate-section">
+
+            <h3>Hur Hjälper Det?</h3>
+
+            <div class="decorative">
+                ♡ ❀ ♡
+            </div>
+
+            <p>
+                Donationer hjälper oss att täcka kostnader för dagliga
+                förnödenheter, utrustning och oväntade utgifter som uppstår
+                i samband med skötseln av våra chinchillor och
+                omplaceringschinchillor.
+            </p>
+
+            <div class="donation-list">
+
+                <div class="donation-item">
+                    <h4>♡ Chinchillafoder</h4>
+                    <p>
+                        Chinchillapellets av hög kvalitet till våra egna
+                        chinchillor och omplaceringschinchillor.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Timotejhö &amp; lusernkuber</h4>
+                    <p>
+                        Färskt hö och lämpliga grovfoderprodukter är en
+                        viktig del av chinchillans dagliga kost.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Ugnstorkade tallspån</h4>
+                    <p>
+                        Ugnstorkade tallspån används som lämpligt strö
+                        i våra burar.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Anti-pill fleece</h4>
+                    <p>
+                        Anti-pill fleece används till burunderlag, hängmattor
+                        och andra lämpliga burtillbehör.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Baddamm</h4>
+                    <p>
+                        Baddamm för chinchillor behövs för regelbundna
+                        sandbad och korrekt pälsvård.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Äppelträ</h4>
+                    <p>
+                        Säkert äppelträ ger naturlig gnagberikning och
+                        hjälper till att främja en god tandhälsa.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Ugnstorkat tallträ</h4>
+                    <p>
+                        Säkert ugnstorkat tallträ används till avsatser,
+                        plattformar, hus och annan burinredning.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Burar</h4>
+                    <p>
+                        Lämpliga burar är nödvändiga för att kunna erbjuda
+                        chinchillorna i vår omsorg ett tryggt och rymligt
+                        boende.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Vattenflaskor &amp; matskålar</h4>
+                    <p>
+                        Säkra flaskor och skålar behövs för den dagliga
+                        utfodringen och tillgången till färskt dricksvatten.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Sandbadshus</h4>
+                    <p>
+                        Lämpliga sandbadshus gör det möjligt för
+                        chinchillorna att ta sina regelbundna sandbad
+                        på ett säkert sätt.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Klimatkontroll</h4>
+                    <p>
+                        Att upprätthålla en sval och säker miljö är särskilt
+                        viktigt för chinchillor eftersom de är känsliga
+                        för värme.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Resor</h4>
+                    <p>
+                        Resekostnader kan uppstå när vi hämtar, transporterar
+                        eller på annat sätt hjälper chinchillor i behov.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Akuta situationer</h4>
+                    <p>
+                        Oväntade situationer kan kräva ytterligare
+                        förnödenheter, utrustning eller omedelbar vård.
+                    </p>
+                </div>
+
+                <div class="donation-item">
+                    <h4>♡ Veterinärvård</h4>
+                    <p>
+                        Donationer kan hjälpa till med veterinärundersökningar,
+                        behandlingar och andra medicinska kostnader när
+                        det behövs.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="donate-section">
+
+            <h3>Stöd Våra Omplaceringschinchillor</h3>
+
+            <div class="decorative">
+                ♡ ❀ ♡
+            </div>
+
+            <div class="paypal-box">
+
+                <p>
+                    Om du vill stödja chinchillorna och
+                    omplaceringschinchillorna i vår omsorg kan du göra
+                    en donation via PayPal.
+                </p>
+
+                <a
+                    href="https://www.paypal.me/xBaeTaigax"
+                    class="paypal-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Donera via PayPal ♡
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="donate-section">
+
+            <p>
+                Om du har några frågor om oss är du varmt välkommen
+                att skicka ett meddelande till oss.
+            </p>
+
+        </section>
+
+    </div>
+
+</main>
+
+<section class="social-area">
+
+    <div class="social-divider"></div>
+
+    <div class="social-links">
+
+        <a
+            href="https://www.facebook.com/baeschinchillas"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+        >
+            <svg class="social-icon facebook-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="11" />
+                <path
+                    class="facebook-f"
+                    d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
+                />
+            </svg>
+        </a>
+
+        <a
+            href="https://www.instagram.com/baeschinchilla"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+        >
+            <svg class="social-icon instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" class="instagram-dot" />
+            </svg>
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>
