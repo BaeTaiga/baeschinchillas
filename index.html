@@ -51,6 +51,7 @@
         ========================= */
 
         header {
+            position: relative;
             background: #FFFFFF;
             border-bottom: 2px solid #ED7B8D;
             text-align: center;
@@ -60,6 +61,42 @@
         .header-inner {
             max-width: 1100px;
             margin: 0 auto;
+        }
+
+        /* =========================
+           LANGUAGE SELECTOR
+        ========================= */
+
+        .language-selector {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            z-index: 10;
+        }
+
+        .language-selector a {
+            color: #ED8999;
+            transition: color 0.2s ease;
+        }
+
+        .language-selector a:hover {
+            color: #FFB7C5;
+        }
+
+        .language-selector a.active-language {
+            color: #ED7B8D;
+            font-weight: 700;
+        }
+
+        .language-divider {
+            color: #FFB7C5;
+            font-weight: 500;
         }
 
         .logo-display {
@@ -424,7 +461,13 @@
         @media (max-width: 650px) {
 
             header {
-                padding-top: 22px;
+                padding-top: 50px;
+            }
+
+            .language-selector {
+                top: 16px;
+                right: 20px;
+                font-size: 12px;
             }
 
             .logo-display {
@@ -558,6 +601,10 @@
 
         @media (max-width: 430px) {
 
+            .language-selector {
+                right: 15px;
+            }
+
             .logo-display {
                 grid-template-columns: 1fr 110px 1fr;
             }
@@ -587,6 +634,27 @@
 ========================== -->
 
 <header>
+
+    <!-- LANGUAGE SELECTOR -->
+
+    <div class="language-selector" aria-label="Language selector">
+
+        <a
+            href="index.html"
+            class="active-language"
+            lang="en"
+            hreflang="en"
+        >English</a>
+
+        <span class="language-divider">|</span>
+
+        <a
+            href="sv/index.html"
+            lang="sv"
+            hreflang="sv"
+        >Swedish</a>
+
+    </div>
 
     <div class="header-inner">
 
