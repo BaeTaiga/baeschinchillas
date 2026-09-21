@@ -51,6 +51,7 @@
         ========================= */
 
         header {
+            position: relative;
             background: #FFFFFF;
             border-bottom: 2px solid #ED7B8D;
             text-align: center;
@@ -60,6 +61,42 @@
         .header-inner {
             max-width: 1100px;
             margin: 0 auto;
+        }
+
+        /* =========================
+           LANGUAGE SELECTOR
+        ========================= */
+
+        .language-selector {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            z-index: 10;
+        }
+
+        .language-selector a {
+            color: #ED8999;
+            transition: color 0.2s ease;
+        }
+
+        .language-selector a:hover {
+            color: #FFB7C5;
+        }
+
+        .language-selector a.active-language {
+            color: #ED7B8D;
+            font-weight: 700;
+        }
+
+        .language-divider {
+            color: #FFB7C5;
+            font-weight: 500;
         }
 
         .logo-display {
@@ -388,7 +425,13 @@
         @media (max-width: 650px) {
 
             header {
-                padding-top: 22px;
+                padding-top: 50px;
+            }
+
+            .language-selector {
+                top: 16px;
+                right: 20px;
+                font-size: 12px;
             }
 
             .logo-display {
@@ -506,6 +549,10 @@
 
         @media (max-width: 430px) {
 
+            .language-selector {
+                right: 15px;
+            }
+
             .logo-display {
                 grid-template-columns: 1fr 110px 1fr;
             }
@@ -536,38 +583,38 @@
 
 <header>
 
+    <!-- LANGUAGE SELECTOR -->
+
+    <div class="language-selector" aria-label="Language selector">
+
+        <a
+            href="fact.html"
+            class="active-language"
+            lang="en"
+            hreflang="en"
+        >English</a>
+
+        <span class="language-divider">|</span>
+
+        <a
+            href="sv/fact.html"
+            lang="sv"
+            hreflang="sv"
+        >Swedish</a>
+
+    </div>
+
     <div class="header-inner">
 
         <div class="logo-display">
 
-            <!-- LEFT CHINCHILLAS -->
-
             <div class="logo-side left-side">
 
-                <img
-                    src="chinchilla-right-1.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-1"
-                    aria-hidden="true"
-                >
-
-                <img
-                    src="chinchilla-right-2.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-2"
-                    aria-hidden="true"
-                >
-
-                <img
-                    src="chinchilla-right-3.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-3"
-                    aria-hidden="true"
-                >
+                <img src="chinchilla-right-1.png" alt="" class="decorative-chinchilla chinchilla-1" aria-hidden="true">
+                <img src="chinchilla-right-2.png" alt="" class="decorative-chinchilla chinchilla-2" aria-hidden="true">
+                <img src="chinchilla-right-3.png" alt="" class="decorative-chinchilla chinchilla-3" aria-hidden="true">
 
             </div>
-
-            <!-- MAIN LOGO -->
 
             <div class="main-logo-container">
 
@@ -579,65 +626,30 @@
 
             </div>
 
-            <!-- RIGHT CHINCHILLAS -->
-
             <div class="logo-side right-side">
 
-                <img
-                    src="chinchilla-left-1.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-1"
-                    aria-hidden="true"
-                >
-
-                <img
-                    src="chinchilla-left-2.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-2"
-                    aria-hidden="true"
-                >
-
-                <img
-                    src="chinchilla-left-3.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-3"
-                    aria-hidden="true"
-                >
+                <img src="chinchilla-left-1.png" alt="" class="decorative-chinchilla chinchilla-1" aria-hidden="true">
+                <img src="chinchilla-left-2.png" alt="" class="decorative-chinchilla chinchilla-2" aria-hidden="true">
+                <img src="chinchilla-left-3.png" alt="" class="decorative-chinchilla chinchilla-3" aria-hidden="true">
 
             </div>
 
         </div>
 
-        <!-- WEBSITE NAME -->
-
         <h1 class="brand-main">
-
             <span class="title-blossom">❀</span>
-
             <span>Bae's Chinchillas</span>
-
             <span class="title-blossom">❀</span>
-
         </h1>
 
-        <!-- NAVIGATION -->
-
         <nav>
-
             <a href="index.html">Home</a>
-
             <a href="fact.html" class="active">Fact</a>
-
             <a href="care.html">Care</a>
-
             <a href="chinchillas.html">Chinchillas</a>
-
             <a href="adoption.html">Adoption</a>
-
             <a href="donate.html">Donate</a>
-
             <a href="contact.html">Contact</a>
-
         </nav>
 
     </div>
@@ -652,8 +664,6 @@
 
     <div class="content">
 
-        <!-- PAGE TITLE -->
-
         <div class="page-title">
 
             <h2>Chinchilla Facts</h2>
@@ -664,191 +674,239 @@
 
         </div>
 
-        <!-- FACT 1 -->
+        <!-- 1. WHERE DO CHINCHILLAS COME FROM? -->
 
         <section class="fact-section">
 
             <h3>Where Do Chinchillas Come From?</h3>
 
             <p>
-                Chinchillas are native to the Andes Mountains of South
-                America, where they live in rocky, mountainous environments
-                at high elevations.
+                Chinchillas are native to four South American countries —
+                Peru, Bolivia, Chile and Argentina. They originate from the
+                Andes Mountains, where they live at high elevations in rocky,
+                dry mountainous areas. The harsh landscape has made
+                chinchillas well adapted to a cool and dry climate.
             </p>
 
             <p>
-                Wild chinchillas are naturally adapted to cooler, relatively
-                dry climates and spend much of their time hiding among rocks
-                and crevices.
+                In the wild, chinchillas seek shelter among rocks and in
+                mountain crevices, where they can hide from predators and
+                protect themselves from the elements.
             </p>
 
         </section>
 
-        <!-- FACT 2 -->
+        <!-- 2. HOW LONG DO CHINCHILLAS LIVE? -->
 
         <section class="fact-section">
 
             <h3>How Long Do Chinchillas Live?</h3>
 
             <p>
-                With proper care, chinchillas can live for many years. A
-                well-cared-for chinchilla can commonly reach 15–20 years of
-                age, making them a long-term commitment.
+                Chinchillas often live for around 15–20 years with proper
+                care, and some individuals may live even longer. Their long
+                lifespan means they can be a wonderful companion to have by
+                your side for many years. However, bringing a chinchilla into
+                your home is a long-term commitment and should never be
+                treated as just a passing interest.
             </p>
 
             <p>
-                Their long lifespan is one of the many reasons it is important
-                to carefully consider whether a chinchilla is the right
-                companion for your household.
+                Before bringing a chinchilla home, it is important to consider
+                whether you are prepared to provide them with the proper care,
+                time and security they need throughout their entire life.
             </p>
 
         </section>
 
-        <!-- FACT 3 -->
+        <!-- 3. THEIR AMAZING FUR -->
 
         <section class="fact-section">
 
-            <h3>Those Amazing Fur Coats</h3>
+            <h3>Their Amazing Fur</h3>
 
             <p>
-                Chinchillas have one of the densest fur coats of any land
-                mammal. Their incredibly soft fur helps protect them from the
-                cold temperatures of their natural mountain environment.
+                Chinchillas have one of the densest coats of any land mammal.
+                Unlike many other mammals, which typically have one hair
+                growing from each hair follicle, chinchillas can have up to
+                80 incredibly fine hairs growing from a single follicle.
+                Their exceptionally dense and soft fur helps protect them
+                from the cool climate of their natural mountain habitat.
             </p>
 
             <p>
-                Because their fur is so dense, chinchillas should never be
-                bathed in water. Moisture can become trapped close to the skin
-                and cause problems with their coat and health.
-            </p>
-
-        </section>
-
-        <!-- FACT 4 -->
-
-        <section class="fact-section">
-
-            <h3>Why Do Chinchillas Take Dust Baths?</h3>
-
-            <p>
-                Instead of bathing in water, chinchillas clean their fur by
-                rolling around in specially formulated volcanic dust.
-            </p>
-
-            <p>
-                The fine dust reaches deep into their dense fur and absorbs
-                excess oils and moisture, helping keep their coat clean, soft
-                and healthy.
+                Because their fur is so incredibly dense, chinchillas should
+                never be bathed in water. Instead, they keep their coat clean
+                and healthy by taking regular dust baths.
             </p>
 
         </section>
 
-        <!-- FACT 5 -->
-
-        <section class="fact-section">
-
-            <h3>Chinchillas Are Crepuscular</h3>
-
-            <p>
-                Chinchillas are generally most active during the evening and
-                early morning hours. They are often described as crepuscular,
-                meaning their activity tends to increase around dawn and dusk.
-            </p>
-
-            <p>
-                Individual chinchillas can still have different routines
-                depending on their environment and personality.
-            </p>
-
-        </section>
-
-        <!-- FACT 6 -->
-
-        <section class="fact-section">
-
-            <h3>They Are Excellent Jumpers</h3>
-
-            <p>
-                Chinchillas are incredibly agile and can jump surprisingly
-                high. Their strong hind legs allow them to move quickly between
-                rocks and different levels of their environment.
-            </p>
-
-            <p>
-                This is one reason chinchillas benefit from safe, appropriately
-                designed enclosures that allow them to climb, jump and explore.
-            </p>
-
-        </section>
-
-        <!-- FACT 7 -->
-
-        <section class="fact-section">
-
-            <h3>What Do Chinchillas Eat?</h3>
-
-            <p>
-                Chinchillas are herbivores and need a high-fibre diet
-                consisting of Timothy hay, appropriate chinchilla pellets and
-                fresh water.
-            </p>
-
-            <p>
-                Treats are not needed or necessary. Instead, offer safe chew
-                items such as apple sticks or other chinchilla-safe wood toys.
-            </p>
-
-        </section>
-
-        <!-- FACT 8 -->
-
-        <section class="fact-section">
-
-            <h3>Chinchilla Teeth Never Stop Growing</h3>
-
-            <p>
-                Like many rodents, chinchillas have continuously growing teeth.
-                Their teeth naturally wear down through chewing and eating
-                fibrous foods.
-            </p>
-
-            <p>
-                Providing appropriate safe chewing materials and a suitable
-                diet is therefore an important part of chinchilla care.
-            </p>
-
-        </section>
-
-        <!-- FACT 9 -->
-
-        <section class="fact-section">
-
-            <h3>They Are Very Social Animals</h3>
-
-            <p>
-                Chinchillas are naturally social animals and often enjoy the
-                company of other compatible chinchillas.
-            </p>
-
-            <p>
-                However, introductions should always be handled carefully and
-                individual personalities and compatibility need to be taken
-                into consideration.
-            </p>
-
-        </section>
-
-        <!-- FACT 10 -->
+        <!-- 4. THEY CAN'T SWEAT LIKE WE DO -->
 
         <section class="fact-section">
 
             <h3>They Can't Sweat Like We Do</h3>
 
             <p>
-                Chinchillas have very limited ability to cool themselves
-                because they don't have functional sweat glands like humans.
-                Their incredibly dense fur also makes overheating a serious
-                concern.
+                Chinchillas cannot sweat the same way we humans do, making it
+                difficult for them to regulate their body temperature.
+                Combined with their exceptionally dense fur, this makes them
+                particularly sensitive to high temperatures and puts them at
+                risk of overheating.
+            </p>
+
+            <p>
+                Chinchillas should therefore be kept in a cool, dry
+                environment. A suitable temperature is around 10–18 °C
+                (50–64 °F), and it is important to maintain a safe and stable
+                temperature throughout the year. High temperatures can
+                quickly become dangerous for a chinchilla, particularly
+                during the warmer months.
+            </p>
+
+        </section>
+
+        <!-- 5. WHY DO CHINCHILLAS TAKE DUST BATHS? -->
+
+        <section class="fact-section">
+
+            <h3>Why Do Chinchillas Take Dust Baths?</h3>
+
+            <p>
+                Unlike many other animals, chinchillas should never be bathed
+                in water. Instead, they keep their fur clean by rolling around
+                in a fine bathing dust. This dust is designed to resemble the
+                fine volcanic ash that chinchillas would naturally roll in to
+                clean their fur in the wild.
+            </p>
+
+            <p>
+                As they roll and move through the dust, the fine particles
+                work their way through their incredibly dense fur, absorbing
+                excess oils and moisture. This helps keep their coat clean,
+                soft and in good condition.
+            </p>
+
+            <p>
+                Choosing the right bathing dust is important for maintaining
+                a chinchilla's coat. Always use a product specifically made
+                for chinchillas. A product we use and recommend is Oxbow
+                Poof! Chinchilla Dust Bath.
+            </p>
+
+        </section>
+
+        <!-- 6. WHAT DO CHINCHILLAS EAT? -->
+
+        <section class="fact-section">
+
+            <h3>What Do Chinchillas Eat?</h3>
+
+            <p>
+                Chinchillas are herbivores with a sensitive digestive system
+                that is specially adapted to a high-fibre diet. The foundation
+                of their diet consists of unlimited access to high-quality
+                timothy hay, pellets specifically formulated for chinchillas
+                and constant access to fresh water.
+            </p>
+
+            <p>
+                Chinchillas do not need treats or sugary snacks. Instead, they
+                can be offered safe chewing materials such as apple sticks and
+                other chinchilla-safe chew toys. These provide enrichment
+                while also allowing them to satisfy their natural need to chew.
+            </p>
+
+        </section>
+
+        <!-- 7. A CHINCHILLA'S TEETH NEVER STOP GROWING -->
+
+        <section class="fact-section">
+
+            <h3>A Chinchilla's Teeth Never Stop Growing</h3>
+
+            <p>
+                A chinchilla's teeth grow continuously throughout their entire
+                life. Both their front teeth and molars need to be naturally
+                worn down through a high-fibre diet and regular chewing.
+            </p>
+
+            <p>
+                Unlimited access to high-quality timothy hay plays an important
+                role in keeping their teeth properly worn, as the constant
+                chewing helps maintain healthy dental wear. Providing safe
+                chewing materials, such as apple sticks and chinchilla-safe
+                chew toys, also allows them to satisfy their natural need to
+                chew while providing enrichment.
+            </p>
+
+        </section>
+
+        <!-- 8. THEY ARE VERY SOCIAL ANIMALS -->
+
+        <section class="fact-section">
+
+            <h3>They Are Very Social Animals</h3>
+
+            <p>
+                Chinchillas are naturally social animals and live alongside
+                other chinchillas in the wild. Because of their social nature,
+                chinchillas should generally be kept in compatible pairs where
+                both individuals are comfortable and get along well together.
+            </p>
+
+            <p>
+                However, not every chinchilla will be compatible with another.
+                Introductions should always be done carefully and under
+                supervision, as every chinchilla has their own personality and
+                some may prefer to live alone. The most important thing is to
+                always consider the individual chinchilla's needs and
+                well-being.
+            </p>
+
+        </section>
+
+        <!-- 9. CHINCHILLAS ARE CREPUSCULAR -->
+
+        <section class="fact-section">
+
+            <h3>Chinchillas Are Crepuscular</h3>
+
+            <p>
+                Chinchillas are crepuscular, meaning they are typically most
+                active around dusk and dawn. During the day, they often spend
+                much of their time resting and sleeping, becoming more active
+                towards the evening and during the early morning hours.
+            </p>
+
+            <p>
+                However, every chinchilla is an individual and their routines
+                can vary. Some may be more active at other times of the day
+                depending on their environment, habits and daily routine.
+            </p>
+
+        </section>
+
+        <!-- 10. THEY ARE AMAZING JUMPERS -->
+
+        <section class="fact-section">
+
+            <h3>They Are Amazing Jumpers</h3>
+
+            <p>
+                Chinchillas are incredibly agile and skilled jumpers. Their
+                powerful hind legs allow them to jump high and quickly move
+                between different levels, helping them navigate the rocky
+                terrain of their natural habitat.
+            </p>
+
+            <p>
+                Our domesticated chinchillas still have this natural instinct.
+                It is therefore important to provide them with a spacious and
+                secure enclosure with multiple levels, giving them plenty of
+                opportunities to jump, move around and explore their
+                environment.
             </p>
 
         </section>
@@ -857,17 +915,11 @@
 
 </main>
 
-<!-- =========================
-     SOCIAL MEDIA
-========================== -->
-
 <section class="social-area">
 
     <div class="social-divider"></div>
 
     <div class="social-links">
-
-        <!-- FACEBOOK -->
 
         <a
             href="https://www.facebook.com/baeschinchillas"
@@ -876,25 +928,14 @@
             rel="noopener noreferrer"
             aria-label="Facebook"
         >
-
-            <svg
-                class="social-icon facebook-icon"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-            >
-
+            <svg class="social-icon facebook-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="11" />
-
                 <path
                     class="facebook-f"
                     d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
                 />
-
             </svg>
-
         </a>
-
-        <!-- INSTAGRAM -->
 
         <a
             href="https://www.instagram.com/baeschinchilla"
@@ -903,36 +944,11 @@
             rel="noopener noreferrer"
             aria-label="Instagram"
         >
-
-            <svg
-                class="social-icon instagram-icon"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-            >
-
-                <rect
-                    x="3"
-                    y="3"
-                    width="18"
-                    height="18"
-                    rx="5"
-                />
-
-                <circle
-                    cx="12"
-                    cy="12"
-                    r="4"
-                />
-
-                <circle
-                    cx="17.5"
-                    cy="6.5"
-                    r="1"
-                    class="instagram-dot"
-                />
-
+            <svg class="social-icon instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" class="instagram-dot" />
             </svg>
-
         </a>
 
     </div>
