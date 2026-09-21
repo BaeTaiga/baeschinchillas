@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact | Bae's Chinchillas</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,10 +50,43 @@
         ========================= */
 
         header {
+            position: relative;
             background: #FFFFFF;
             border-bottom: 2px solid #ED7B8D;
             text-align: center;
             padding: 28px 20px 0;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            z-index: 10;
+        }
+
+        .language-selector a {
+            color: #ED8999;
+            transition: color 0.2s ease;
+        }
+
+        .language-selector a:hover {
+            color: #FFB7C5;
+        }
+
+        .language-selector a.active-language {
+            color: #ED7B8D;
+            font-weight: 700;
+        }
+
+        .language-divider {
+            color: #FFB7C5;
+            font-weight: 500;
         }
 
         .header-inner {
@@ -87,8 +121,6 @@
             object-position: center bottom;
         }
 
-        /* LEFT SIDE */
-
         .left-side .chinchilla-1 {
             width: 105px;
             max-height: 112px;
@@ -103,8 +135,6 @@
             width: 100px;
             max-height: 118px;
         }
-
-        /* RIGHT SIDE */
 
         .right-side .chinchilla-1 {
             width: 100px;
@@ -121,8 +151,6 @@
             max-height: 112px;
         }
 
-        /* MAIN LOGO */
-
         .main-logo-container {
             display: flex;
             justify-content: center;
@@ -137,8 +165,6 @@
             display: block;
             object-fit: contain;
         }
-
-        /* WEBSITE NAME */
 
         .brand-main {
             margin: 0;
@@ -160,7 +186,9 @@
             line-height: 1;
         }
 
-        /* NAVIGATION */
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         nav {
             display: flex;
@@ -455,7 +483,13 @@
         @media (max-width: 650px) {
 
             header {
-                padding-top: 22px;
+                padding-top: 50px;
+            }
+
+            .language-selector {
+                top: 16px;
+                right: 20px;
+                font-size: 12px;
             }
 
             .logo-display {
@@ -595,6 +629,10 @@
 
         @media (max-width: 430px) {
 
+            .language-selector {
+                right: 15px;
+            }
+
             .logo-display {
                 grid-template-columns: 1fr 110px 1fr;
             }
@@ -619,29 +657,32 @@
 <body>
 
 <header>
+
+    <div class="language-selector" aria-label="Language selector">
+        <a
+            href="contact.html"
+            class="active-language"
+            lang="en"
+            hreflang="en"
+        >English</a>
+
+        <span class="language-divider">|</span>
+
+        <a
+            href="sv/contact.html"
+            lang="sv"
+            hreflang="sv"
+        >Swedish</a>
+    </div>
+
     <div class="header-inner">
 
         <div class="logo-display">
 
             <div class="logo-side left-side">
-                <img
-                    src="chinchilla-right-1.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-1"
-                    aria-hidden="true"
-                >
-                <img
-                    src="chinchilla-right-2.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-2"
-                    aria-hidden="true"
-                >
-                <img
-                    src="chinchilla-right-3.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-3"
-                    aria-hidden="true"
-                >
+                <img src="chinchilla-right-1.png" alt="" class="decorative-chinchilla chinchilla-1" aria-hidden="true">
+                <img src="chinchilla-right-2.png" alt="" class="decorative-chinchilla chinchilla-2" aria-hidden="true">
+                <img src="chinchilla-right-3.png" alt="" class="decorative-chinchilla chinchilla-3" aria-hidden="true">
             </div>
 
             <div class="main-logo-container">
@@ -653,24 +694,9 @@
             </div>
 
             <div class="logo-side right-side">
-                <img
-                    src="chinchilla-left-1.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-1"
-                    aria-hidden="true"
-                >
-                <img
-                    src="chinchilla-left-2.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-2"
-                    aria-hidden="true"
-                >
-                <img
-                    src="chinchilla-left-3.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-3"
-                    aria-hidden="true"
-                >
+                <img src="chinchilla-left-1.png" alt="" class="decorative-chinchilla chinchilla-1" aria-hidden="true">
+                <img src="chinchilla-left-2.png" alt="" class="decorative-chinchilla chinchilla-2" aria-hidden="true">
+                <img src="chinchilla-left-3.png" alt="" class="decorative-chinchilla chinchilla-3" aria-hidden="true">
             </div>
 
         </div>
@@ -692,12 +718,12 @@
         </nav>
 
     </div>
+
 </header>
 
 <main class="page">
-    <div class="content">
 
-        <!-- GET IN TOUCH -->
+    <div class="content">
 
         <section class="page-title">
 
@@ -717,8 +743,6 @@
 
         </section>
 
-        <!-- OUR SOCIAL MEDIA -->
-
         <section class="contact-section">
 
             <h3>Our Social Media</h3>
@@ -732,8 +756,6 @@
             </p>
 
             <div class="contact-social-links">
-
-                <!-- FACEBOOK -->
 
                 <a
                     href="https://www.facebook.com/baeschinchillas"
@@ -755,8 +777,6 @@
                         />
                     </svg>
                 </a>
-
-                <!-- INSTAGRAM -->
 
                 <a
                     href="https://www.instagram.com/baeschinchilla"
@@ -797,8 +817,6 @@
 
         </section>
 
-        <!-- EMAIL -->
-
         <section class="contact-section">
 
             <h3>Send Us A Message</h3>
@@ -819,17 +837,14 @@
         </section>
 
     </div>
-</main>
 
-<!-- FOOTER SOCIAL MEDIA -->
+</main>
 
 <section class="social-area">
 
     <div class="social-divider"></div>
 
     <div class="social-links">
-
-        <!-- FACEBOOK -->
 
         <a
             href="https://www.facebook.com/baeschinchillas"
@@ -852,8 +867,6 @@
             </svg>
         </a>
 
-        <!-- INSTAGRAM -->
-
         <a
             href="https://www.instagram.com/baeschinchilla"
             class="social-link"
@@ -866,26 +879,9 @@
                 viewBox="0 0 24 24"
                 aria-hidden="true"
             >
-                <rect
-                    x="3"
-                    y="3"
-                    width="18"
-                    height="18"
-                    rx="5"
-                />
-
-                <circle
-                    cx="12"
-                    cy="12"
-                    r="4"
-                />
-
-                <circle
-                    cx="17.5"
-                    cy="6.5"
-                    r="1"
-                    class="instagram-dot"
-                />
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" class="instagram-dot" />
             </svg>
         </a>
 
