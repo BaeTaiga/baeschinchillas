@@ -1,50 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- English -->
-  <url>
-    <loc>https://baeschinchillas.se/</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/fact.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/care.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/chinchillas.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/adoption.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/donate.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/contact.html</loc>
-  </url>
+    <!-- Swedish -->
 
-  <!-- Swedish -->
-  <url>
-    <loc>https://baeschinchillas.se/sv/</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/sv/fact.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/sv/care.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/sv/chinchillas.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/sv/adoption.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/sv/donate.html</loc>
-  </url>
-  <url>
-    <loc>https://baeschinchillas.se/sv/contact.html</loc>
-  </url>
+    <url>
+        <loc>https://baeschinchillas.se/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/fakta/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/sk%C3%B6tsel/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/chinchillor/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/adoptera/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/donera/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/kontakt/</loc>
+    </url>
+
+    <!-- English -->
+
+    <url>
+        <loc>https://baeschinchillas.se/en/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/en/fact/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/en/care/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/en/chinchillas/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/en/adoption/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/en/donate/</loc>
+    </url>
+
+    <url>
+        <loc>https://baeschinchillas.se/en/contact/</loc>
+    </url>
 
 </urlset>
