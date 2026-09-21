@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- English -->
+  <url>
+    <loc>https://baeschinchillas.se/</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/fact.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/care.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/chinchillas.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/adoption.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/donate.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/contact.html</loc>
+  </url>
+
+  <!-- Swedish -->
+  <url>
+    <loc>https://baeschinchillas.se/sv/</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/sv/fact.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/sv/care.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/sv/chinchillas.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/sv/adoption.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/sv/donate.html</loc>
+  </url>
+  <url>
+    <loc>https://baeschinchillas.se/sv/contact.html</loc>
+  </url>
+
+</urlset>
