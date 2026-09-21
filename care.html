@@ -49,6 +49,7 @@
         ========================= */
 
         header {
+            position: relative;
             background: #FFFFFF;
             border-bottom: 2px solid #ED7B8D;
             text-align: center;
@@ -58,6 +59,42 @@
         .header-inner {
             max-width: 1100px;
             margin: 0 auto;
+        }
+
+        /* =========================
+           LANGUAGE SELECTOR
+        ========================= */
+
+        .language-selector {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            z-index: 10;
+        }
+
+        .language-selector a {
+            color: #ED8999;
+            transition: color 0.2s ease;
+        }
+
+        .language-selector a:hover {
+            color: #FFB7C5;
+        }
+
+        .language-selector a.active-language {
+            color: #ED7B8D;
+            font-weight: 700;
+        }
+
+        .language-divider {
+            color: #FFB7C5;
+            font-weight: 500;
         }
 
         .logo-display {
@@ -87,8 +124,6 @@
             object-position: center bottom;
         }
 
-        /* LEFT SIDE */
-
         .left-side .chinchilla-1 {
             width: 105px;
             max-height: 112px;
@@ -103,8 +138,6 @@
             width: 100px;
             max-height: 118px;
         }
-
-        /* RIGHT SIDE */
 
         .right-side .chinchilla-1 {
             width: 100px;
@@ -121,8 +154,6 @@
             max-height: 112px;
         }
 
-        /* MAIN LOGO */
-
         .main-logo-container {
             display: flex;
             justify-content: center;
@@ -137,8 +168,6 @@
             display: block;
             object-fit: contain;
         }
-
-        /* WEBSITE NAME */
 
         .brand-main {
             margin: 0;
@@ -378,7 +407,6 @@
         ========================= */
 
         @media (max-width: 900px) {
-
             .logo-display {
                 grid-template-columns: 1fr 145px 1fr;
                 gap: 10px;
@@ -410,7 +438,13 @@
         @media (max-width: 650px) {
 
             header {
-                padding-top: 22px;
+                padding-top: 50px;
+            }
+
+            .language-selector {
+                top: 16px;
+                right: 20px;
+                font-size: 12px;
             }
 
             .logo-display {
@@ -540,6 +574,10 @@
 
         @media (max-width: 430px) {
 
+            .language-selector {
+                right: 15px;
+            }
+
             .logo-display {
                 grid-template-columns: 1fr 110px 1fr;
             }
@@ -564,29 +602,32 @@
 <body>
 
 <header>
+
+    <div class="language-selector" aria-label="Language selector">
+        <a
+            href="care.html"
+            class="active-language"
+            lang="en"
+            hreflang="en"
+        >English</a>
+
+        <span class="language-divider">|</span>
+
+        <a
+            href="sv/care.html"
+            lang="sv"
+            hreflang="sv"
+        >Swedish</a>
+    </div>
+
     <div class="header-inner">
 
         <div class="logo-display">
 
             <div class="logo-side left-side">
-                <img
-                    src="chinchilla-right-1.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-1"
-                    aria-hidden="true"
-                >
-                <img
-                    src="chinchilla-right-2.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-2"
-                    aria-hidden="true"
-                >
-                <img
-                    src="chinchilla-right-3.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-3"
-                    aria-hidden="true"
-                >
+                <img src="chinchilla-right-1.png" alt="" class="decorative-chinchilla chinchilla-1" aria-hidden="true">
+                <img src="chinchilla-right-2.png" alt="" class="decorative-chinchilla chinchilla-2" aria-hidden="true">
+                <img src="chinchilla-right-3.png" alt="" class="decorative-chinchilla chinchilla-3" aria-hidden="true">
             </div>
 
             <div class="main-logo-container">
@@ -598,24 +639,9 @@
             </div>
 
             <div class="logo-side right-side">
-                <img
-                    src="chinchilla-left-1.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-1"
-                    aria-hidden="true"
-                >
-                <img
-                    src="chinchilla-left-2.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-2"
-                    aria-hidden="true"
-                >
-                <img
-                    src="chinchilla-left-3.png"
-                    alt=""
-                    class="decorative-chinchilla chinchilla-3"
-                    aria-hidden="true"
-                >
+                <img src="chinchilla-left-1.png" alt="" class="decorative-chinchilla chinchilla-1" aria-hidden="true">
+                <img src="chinchilla-left-2.png" alt="" class="decorative-chinchilla chinchilla-2" aria-hidden="true">
+                <img src="chinchilla-left-3.png" alt="" class="decorative-chinchilla chinchilla-3" aria-hidden="true">
             </div>
 
         </div>
@@ -643,18 +669,18 @@
     <div class="content">
 
         <div class="page-title">
-            <h2>Chinchilla Care</h2>
+            <h2>Basic Care</h2>
             <div class="decorative">♡ ❀ ♡</div>
         </div>
 
-        <!-- 1. BASIC CARE -->
+        <!-- 1. UNDERSTANDING THEIR NEEDS -->
 
         <section class="care-section">
-            <h3>Basic Care</h3>
+            <h3>Understanding Their Needs</h3>
 
             <p>
                 Chinchillas have specific care requirements that are essential
-                to keeping them healthy and happy. Their basic care includes a
+                to keeping them healthy and happy. Their care includes a
                 spacious and secure enclosure, a high-fibre diet with constant
                 access to fresh hay and water, regular dust baths, a cool and
                 dry environment, safe enrichment and opportunities for exercise.
@@ -1192,8 +1218,6 @@
     </div>
 </main>
 
-<!-- SOCIAL MEDIA -->
-
 <section class="social-area">
 
     <div class="social-divider"></div>
@@ -1207,13 +1231,8 @@
             rel="noopener noreferrer"
             aria-label="Facebook"
         >
-            <svg
-                class="social-icon facebook-icon"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-            >
+            <svg class="social-icon facebook-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="11" />
-
                 <path
                     class="facebook-f"
                     d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
@@ -1228,31 +1247,10 @@
             rel="noopener noreferrer"
             aria-label="Instagram"
         >
-            <svg
-                class="social-icon instagram-icon"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-            >
-                <rect
-                    x="3"
-                    y="3"
-                    width="18"
-                    height="18"
-                    rx="5"
-                />
-
-                <circle
-                    cx="12"
-                    cy="12"
-                    r="4"
-                />
-
-                <circle
-                    cx="17.5"
-                    cy="6.5"
-                    r="1"
-                    class="instagram-dot"
-                />
+            <svg class="social-icon instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" class="instagram-dot" />
             </svg>
         </a>
 
