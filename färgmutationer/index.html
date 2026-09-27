@@ -10,7 +10,7 @@
 
     <meta
         name="description"
-        content="Lär dig mer om chinchillans färger och mutationer, hur de nedärvs och vilka kännetecken som skiljer olika färgmutationer åt."
+        content="Lär dig mer om chinchillans färger och mutationer, deras utseende, egenskaper och betydelse inom avel."
     >
 
     <link rel="canonical" href="https://baeschinchillas.se/fakta/färgmutationer/">
@@ -23,7 +23,7 @@
     <link
         rel="alternate"
         hreflang="en"
-        href="https://baeschinchillas.se/en/fact/colours-mutations/"
+        href="https://baeschinchillas.se/en/"
     >
     <link
         rel="alternate"
@@ -264,7 +264,7 @@
         }
 
         /* =========================
-           HOVER DROPDOWNS
+           HOVER DROPDOWNS - TEST
         ========================= */
 
         .nav-item {
@@ -297,6 +297,7 @@
             z-index: 50;
         }
 
+        /* Invisible bridge keeps the menu open while the mouse moves downward. */
         .nav-dropdown::before {
             content: "";
             position: absolute;
@@ -352,12 +353,13 @@
         }
 
         /* =========================
-           PAGE TITLE
+           FÄRGER & MUTATIONER
         ========================= */
 
         .page-title {
+            max-width: 850px;
+            margin: 0 auto 44px;
             text-align: center;
-            margin-bottom: 42px;
         }
 
         .page-title h2 {
@@ -368,46 +370,66 @@
             line-height: 1.3;
         }
 
-        .page-title .decorative {
-            margin-top: 8px;
-        }
-
-        .decorative {
-            margin-top: 8px;
-            color: #FFB7C5;
-            font-size: 22px;
-            letter-spacing: 4px;
-        }
-
-        /* =========================
-           FACT SECTIONS
-        ========================= */
-
-        .fact-section {
+        .mutation-content {
             max-width: 850px;
-            margin: 0 auto 48px;
-            text-align: left;
+            margin: 0 auto;
         }
 
-        .fact-section:last-child {
-            margin-bottom: 0;
-        }
-
-        .fact-section h3 {
-            margin: 0 0 18px;
+        .mutation-group-title {
+            margin: 0 0 34px;
             color: #ED8999;
             font-size: 26px;
             font-weight: 600;
             line-height: 1.3;
-            text-align: left;
         }
 
-        .fact-section p {
+        .mutation-title {
+            margin: 0 0 20px;
+            color: #ED8999;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .mutation-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+            gap: 34px;
+            align-items: start;
+        }
+
+        .mutation-image-placeholder {
+            width: 100%;
+            min-height: 330px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: #FFF7F9;
+            border: 1px dashed #ED7B8D;
+            border-radius: 28px;
+            color: #ED8999;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .mutation-text p,
+        .mutation-extra p {
             margin: 0 0 20px;
         }
 
-        .fact-section p:last-child {
+        .mutation-text p:last-child,
+        .mutation-extra p:last-child {
             margin-bottom: 0;
+        }
+
+        .mutation-aliases {
+            color: #ED8999;
+            font-weight: 700;
+        }
+
+        .mutation-extra {
+            margin-top: 28px;
         }
 
         /* =========================
@@ -626,7 +648,7 @@
             }
 
             .page-title {
-                margin-bottom: 35px;
+                margin-bottom: 36px;
             }
 
             .page-title h2 {
@@ -638,14 +660,27 @@
                 letter-spacing: 3px;
             }
 
-            .fact-section {
-                margin-bottom: 38px;
+            .mutation-group-title {
+                margin-bottom: 28px;
+                font-size: 23px;
             }
 
-            .fact-section h3 {
-                font-size: 23px;
-                margin-bottom: 15px;
-                text-align: left;
+            .mutation-title {
+                font-size: 22px;
+            }
+
+            .mutation-layout {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .mutation-image-placeholder {
+                min-height: 280px;
+                border-radius: 24px;
+            }
+
+            .mutation-extra {
+                margin-top: 24px;
             }
 
             .social-area {
@@ -700,105 +735,6 @@
                 width: 105px;
             }
         }
-
-        /* =========================
-           MUTATION SECTIONS
-        ========================= */
-
-        .mutation-section {
-            max-width: 850px;
-            margin: 42px auto 0;
-            text-align: left;
-        }
-
-        .mutation-section h3 {
-            margin: 0 0 22px;
-            color: #ED8999;
-            font-size: 26px;
-            font-weight: 600;
-            line-height: 1.3;
-        }
-
-        .mutation-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-            gap: 42px;
-            align-items: start;
-        }
-
-        .mutation-image-wrap {
-            width: 100%;
-        }
-
-        .mutation-image {
-            display: block;
-            width: 100%;
-            height: auto;
-            border-radius: 42px;
-            object-fit: cover;
-        }
-
-        .mutation-image-placeholder {
-            width: 100%;
-            aspect-ratio: 4 / 3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 25px;
-            background: #FFF7F9;
-            border: 1px dashed #ED7B8D;
-            border-radius: 42px;
-            color: #ED8999;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        .mutation-text p {
-            margin: 0 0 20px;
-        }
-
-        .mutation-names {
-            margin: 0 0 20px;
-            color: #ED8999;
-            font-weight: 600;
-        }
-
-        .mutation-extra {
-            margin-top: 26px;
-        }
-
-        .mutation-extra p {
-            margin: 0 0 20px;
-        }
-
-        .mutation-extra p:last-child,
-        .mutation-text p:last-child {
-            margin-bottom: 0;
-        }
-
-        @media (max-width: 750px) {
-            .mutation-layout {
-                grid-template-columns: 1fr;
-                gap: 28px;
-            }
-        }
-
-        @media (max-width: 650px) {
-            .mutation-section {
-                margin-top: 35px;
-            }
-
-            .mutation-image,
-            .mutation-image-placeholder {
-                border-radius: 32px;
-            }
-
-            .mutation-section h3 {
-                font-size: 23px;
-                margin-bottom: 18px;
-            }
-        }
-
     </style>
 </head>
 
@@ -906,9 +842,13 @@
         <!-- WEBSITE NAME -->
 
         <h1 class="brand-main">
+
             <span class="title-blossom">❀</span>
+
             <span>Bae's Chinchillas</span>
+
             <span class="title-blossom">❀</span>
+
         </h1>
 
         <!-- NAVIGATION -->
@@ -974,68 +914,65 @@
 
         </div>
 
-        <!-- DOMINANTA MUTATIONER -->
+        <section class="mutation-content">
 
-        <section class="fact-section">
+            <h3 class="mutation-group-title">Dominanta mutationer</h3>
 
-            <h3>Dominanta mutationer</h3>
+            <article class="mutation-section">
 
-        </section>
+                <h4 class="mutation-title">Grey</h4>
 
-        <!-- GREY -->
+                <div class="mutation-layout">
 
-        <section class="mutation-section">
+                    <div class="mutation-image-placeholder">
+                        Bild på Grey-chinchilla
+                    </div>
 
-            <h3>Grey</h3>
+                    <div class="mutation-text">
 
-            <div class="mutation-layout">
+                        <p class="mutation-aliases">
+                            Standard – Standard Grå – Grå
+                        </p>
 
-                <div class="mutation-image-wrap">
-                    <!-- Byt ut platshållaren mot en bild när Grey-bilden är klar.
-                    Exempel:
-                    <img
-                        src="/bilder/färgmutationer/grey.jpg"
-                        alt="Grå chinchilla"
-                        class="mutation-image"
-                    >
-                    -->
-                    <div class="mutation-image-placeholder">Bild på Grey kommer här</div>
+                        <p>
+                            Grey är chinchillans naturliga färg och den färg som vilda
+                            chinchillor ursprungligen har. Det är grundfärgen hos en
+                            chinchilla som inte visar någon annan färgmutation. Pälsen
+                            har en grå till blågrå ton över huvudet, nacken, ryggen och
+                            skuldrorna, medan sidorna oftast är något ljusare. Färgen
+                            kan variera från mycket ljusgrå till nästan svart och delas
+                            vanligtvis in i olika nyanser: light, medium, dark och
+                            extra dark. Magen ska vara tydligt vit, ögonen svarta och
+                            öronen mörka.
+                        </p>
+
+                    </div>
+
                 </div>
 
-                <div class="mutation-text">
-
-                    <p class="mutation-names">Standard – Standard Grå – Grå</p>
+                <div class="mutation-extra">
 
                     <p>
-                        Grey är chinchillans naturliga färg och den färg som vilda chinchillor ursprungligen har.
-                        Det är grundfärgen hos en chinchilla som inte visar någon annan färgmutation. Pälsen har en
-                        grå till blågrå ton över huvudet, nacken, ryggen och skuldrorna, medan sidorna oftast är
-                        något ljusare. Färgen kan variera från mycket ljusgrå till nästan svart och delas vanligtvis
-                        in i olika nyanser: light, medium, dark och extra dark. Magen ska vara tydligt vit, ögonen
-                        svarta och öronen mörka.
+                        Hos Grey är en klar och jämn färg önskvärd. Magen ska vara ren
+                        och vit, utan grå eller missfärgade partier, och färgen över
+                        ryggen ska vara jämn och tydlig. Framför allt hos mörkare Grey
+                        kan pälsen ibland få en brunaktig eller rödaktig ton. Inom avel
+                        eftersträvas därför djur med en klar blågrå färg, tät päls, bra
+                        storlek och kroppsform.
+                    </p>
+
+                    <p>
+                        Grey kan kombineras med många andra mutationer och har därför
+                        en viktig roll inom avel. Grey av hög kvalitet används ofta för
+                        att stärka bland annat storlek, kroppsform, pälstäthet och
+                        färgkvalitet i olika avelslinjer. Att regelbundet avla tillbaka
+                        till en bra Grey kan hjälpa till att bevara dessa egenskaper
+                        även när man arbetar med andra färgmutationer.
                     </p>
 
                 </div>
 
-            </div>
-
-            <div class="mutation-extra">
-
-                <p>
-                    Hos Grey är en klar och jämn färg önskvärd. Magen ska vara ren och vit, utan grå eller
-                    missfärgade partier, och färgen över ryggen ska vara jämn och tydlig. Framför allt hos
-                    mörkare Grey kan pälsen ibland få en brunaktig eller rödaktig ton. Inom avel eftersträvas
-                    därför djur med en klar blågrå färg, tät päls, bra storlek och kroppsform.
-                </p>
-
-                <p>
-                    Grey kan kombineras med många andra mutationer och har därför en viktig roll inom avel.
-                    Grey av hög kvalitet används ofta för att stärka bland annat storlek, kroppsform, pälstäthet
-                    och färgkvalitet i olika avelslinjer. Att regelbundet avla tillbaka till en bra Grey kan hjälpa
-                    till att bevara dessa egenskaper även när man arbetar med andra färgmutationer.
-                </p>
-
-            </div>
+            </article>
 
         </section>
 
@@ -1068,12 +1005,14 @@
                 viewBox="0 0 24 24"
                 aria-hidden="true"
             >
+
                 <circle cx="12" cy="12" r="11" />
 
                 <path
                     class="facebook-f"
                     d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
                 />
+
             </svg>
 
         </a>
@@ -1093,6 +1032,7 @@
                 viewBox="0 0 24 24"
                 aria-hidden="true"
             >
+
                 <rect
                     x="3"
                     y="3"
@@ -1113,6 +1053,7 @@
                     r="1"
                     class="instagram-dot"
                 />
+
             </svg>
 
         </a>
