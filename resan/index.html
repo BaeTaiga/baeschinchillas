@@ -389,6 +389,43 @@
         }
 
         /* =========================
+           LOWER PHOTOS
+        ========================= */
+
+        .three-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 850px;
+            margin: 42px auto 0;
+        }
+
+        .lower-image,
+        .image-placeholder {
+            width: 100%;
+            height: 210px;
+            border: 1px solid #ED7B8D;
+            border-radius: 24px;
+        }
+
+        .lower-image {
+            display: block;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .image-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFF7F9;
+            border-style: dashed;
+            color: #ED8999;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        /* =========================
            SOCIAL MEDIA
         ========================= */
 
@@ -624,6 +661,17 @@
 
 
 
+
+            .three-images {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .lower-image,
+            .image-placeholder {
+                height: 220px;
+                border-radius: 22px;
+            }
 
             .social-area {
                 padding-bottom: 20px;
@@ -882,6 +930,24 @@
             </div>
 
         </section>
+
+        <!-- LOWER PHOTOS -->
+
+        <div class="three-images">
+
+            <div class="image-placeholder">
+                Chinchillabild
+            </div>
+
+            <div class="image-placeholder">
+                Chinchillabild
+            </div>
+
+            <div class="image-placeholder">
+                Chinchillabild
+            </div>
+
+        </div>
 
     </div>
 
