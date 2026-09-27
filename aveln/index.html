@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="/favicon.png">
-
     <title>Aveln | Bae's Chinchillas</title>
 
     <meta name="description" content="Läs om målen med aveln hos Bae's Chinchillas och vårt fokus på hälsa, temperament och kvalitet.">
@@ -20,13 +18,15 @@
     <link
         rel="alternate"
         hreflang="en"
-        href="https://baeschinchillas.se/en/resan/"
+        href="https://baeschinchillas.se/en/breeding/"
     >
     <link
         rel="alternate"
         hreflang="x-default"
         href="https://baeschinchillas.se/aveln/"
     >
+
+    <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,15 +79,6 @@
             padding: 28px 20px 0;
         }
 
-        .header-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        /* =========================
-           LANGUAGE SELECTOR
-        ========================= */
-
         .language-selector {
             position: absolute;
             top: 16px;
@@ -120,6 +111,11 @@
             font-weight: 500;
         }
 
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
         .logo-display {
             width: 100%;
             min-height: 145px;
@@ -147,8 +143,6 @@
             object-position: center bottom;
         }
 
-        /* LEFT SIDE */
-
         .left-side .chinchilla-1 {
             width: 105px;
             max-height: 112px;
@@ -163,8 +157,6 @@
             width: 100px;
             max-height: 118px;
         }
-
-        /* RIGHT SIDE */
 
         .right-side .chinchilla-1 {
             width: 100px;
@@ -181,8 +173,6 @@
             max-height: 112px;
         }
 
-        /* MAIN LOGO */
-
         .main-logo-container {
             display: flex;
             justify-content: center;
@@ -197,8 +187,6 @@
             display: block;
             object-fit: contain;
         }
-
-        /* WEBSITE NAME */
 
         .brand-main {
             margin: 0;
@@ -348,17 +336,13 @@
             box-shadow: 0 8px 25px rgba(237, 123, 141, 0.08);
         }
 
-        /* =========================
-           RESAN
-        ========================= */
-
-        .journey-section {
+        .page-title {
             max-width: 850px;
-            margin: 0 auto;
+            margin: 0 auto 48px;
             text-align: center;
         }
 
-        .journey-section h2 {
+        .page-title h2 {
             margin: 0;
             color: #ED8999;
             font-size: 30px;
@@ -373,20 +357,121 @@
             letter-spacing: 4px;
         }
 
-        .journey-text {
+        .intro-text {
             margin-top: 28px;
         }
 
-        .journey-text p {
-            margin: 0 0 20px;
-        }
-
-        .journey-text p:last-child {
-            margin-bottom: 0;
+        .intro-text p {
+            margin: 0;
         }
 
         /* =========================
-           SOCIAL MEDIA
+           CONTACT SECTIONS
+        ========================= */
+
+        .contact-section {
+            max-width: 850px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+
+        .contact-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-section h3 {
+            margin: 0;
+            color: #ED8999;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .contact-section > .decorative {
+            margin-bottom: 24px;
+        }
+
+        .contact-section p {
+            margin: 0;
+        }
+
+        /* =========================
+           CONTACT SOCIAL MEDIA
+        ========================= */
+
+        .contact-social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+            margin-top: 26px;
+        }
+
+        .contact-social-link {
+            width: 58px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ED8999;
+            text-decoration: none;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .contact-social-link:hover {
+            color: #FFB7C5;
+            transform: translateY(-2px);
+        }
+
+        .contact-social-icon {
+            width: 58px;
+            height: 58px;
+            display: block;
+        }
+
+        .contact-facebook-icon {
+            fill: #ED8999;
+        }
+
+        .contact-facebook-f {
+            fill: #FFFFFF;
+        }
+
+        .contact-instagram-icon {
+            fill: none;
+            stroke: #ED8999;
+            stroke-width: 1.8;
+        }
+
+        .contact-instagram-dot {
+            fill: #ED8999;
+            stroke: none;
+        }
+
+        /* =========================
+           EMAIL
+        ========================= */
+
+        .email-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #ED8999;
+            font-size: 20px;
+            font-weight: 600;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .email-link:hover {
+            color: #FFB7C5;
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           FOOTER SOCIAL MEDIA
         ========================= */
 
         .social-area {
@@ -600,27 +685,50 @@
                 padding: 38px 25px 45px;
             }
 
+            .page-title {
+                margin-bottom: 38px;
+            }
 
-
-
+            .page-title h2 {
+                font-size: 26px;
+            }
 
             .decorative {
                 font-size: 19px;
                 letter-spacing: 3px;
             }
 
-            .journey-section h2 {
-                font-size: 26px;
-            }
-
-            .journey-text {
+            .intro-text {
                 margin-top: 24px;
             }
 
+            .contact-section {
+                margin-bottom: 38px;
+            }
 
+            .contact-section h3 {
+                font-size: 23px;
+            }
 
+            .contact-social-links {
+                gap: 22px;
+                margin-top: 22px;
+            }
 
+            .contact-social-link {
+                width: 50px;
+                height: 50px;
+            }
 
+            .contact-social-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .email-link {
+                font-size: 17px;
+                word-break: break-word;
+            }
 
             .social-area {
                 padding-bottom: 20px;
@@ -679,10 +787,6 @@
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header>
 
     <!-- LANGUAGE SELECTOR -->
@@ -690,7 +794,7 @@
     <div class="language-selector" aria-label="Språkval">
 
         <a
-            href="/en/"
+            href="/en/breeding/"
             lang="en"
             hreflang="en"
         >English</a>
@@ -698,7 +802,7 @@
         <span class="language-divider">|</span>
 
         <a
-            href="/"
+            href="/aveln/"
             class="active-language"
             lang="sv"
             hreflang="sv"
@@ -781,13 +885,9 @@
         <!-- WEBSITE NAME -->
 
         <h1 class="brand-main">
-
             <span class="title-blossom">❀</span>
-
             <span>Bae's Chinchillas</span>
-
             <span class="title-blossom">❀</span>
-
         </h1>
 
         <!-- NAVIGATION -->
@@ -844,6 +944,8 @@
 
     <div class="content">
 
+        <!-- PAGE TITLE -->
+
         <section class="page-title">
 
             <h2>Aveln</h2>
@@ -852,26 +954,26 @@
                 ♡ ❀ ♡
             </div>
 
-        </section>
+            <div class="intro-text">
 
-        <section class="story-section">
+                <p>
+                    Jag strävar efter att föda upp chinchillor med goda förutsättningar för
+                    utställning, fortsatt avel eller ett liv som älskad familjemedlem.
+                </p>
 
-            <p>
-                Jag strävar efter att föda upp chinchillor med goda förutsättningar för
-                utställning, fortsatt avel eller ett liv som älskad familjemedlem.
-            </p>
+                <p style="margin-top: 24px;">
+                    För mig är hälsa och temperament alltid viktiga, men jag vill samtidigt
+                    arbeta mot hög kvalitet när det gäller bland annat kroppsbyggnad, storlek
+                    och päls. Varje parning ska därför vara genomtänkt och ha ett tydligt syfte,
+                    där avelsdjuren väljs för att komplettera varandra och föra linjerna framåt.
+                </p>
 
-            <p>
-                För mig är hälsa och temperament alltid viktiga, men jag vill samtidigt
-                arbeta mot hög kvalitet när det gäller bland annat kroppsbyggnad, storlek
-                och päls. Varje parning ska därför vara genomtänkt och ha ett tydligt syfte,
-                där avelsdjuren väljs för att komplettera varandra och föra linjerna framåt.
-            </p>
+                <p style="margin-top: 24px;">
+                    Jag fokuserar för närvarande främst på mutationerna Royal Persian Angora
+                    (RPA) och Ebony.
+                </p>
 
-            <p>
-                Jag fokuserar för närvarande främst på mutationerna Royal Persian Angora
-                (RPA) och Ebony.
-            </p>
+            </div>
 
         </section>
 
@@ -880,7 +982,7 @@
 </main>
 
 <!-- =========================
-     SOCIAL MEDIA
+     FOOTER SOCIAL MEDIA
 ========================= -->
 
 <section class="social-area">
@@ -898,22 +1000,18 @@
             rel="noopener noreferrer"
             aria-label="Facebook"
         >
-
             <svg
                 class="social-icon facebook-icon"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
             >
-
                 <circle cx="12" cy="12" r="11" />
 
                 <path
                     class="facebook-f"
                     d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
                 />
-
             </svg>
-
         </a>
 
         <!-- INSTAGRAM -->
@@ -925,13 +1023,11 @@
             rel="noopener noreferrer"
             aria-label="Instagram"
         >
-
             <svg
                 class="social-icon instagram-icon"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
             >
-
                 <rect
                     x="3"
                     y="3"
@@ -952,9 +1048,7 @@
                     r="1"
                     class="instagram-dot"
                 />
-
             </svg>
-
         </a>
 
     </div>
