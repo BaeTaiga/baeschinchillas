@@ -545,6 +545,61 @@
             stroke: none;
         }
 
+        /* MOBILE SLIDE-OUT MENU */
+        .mobile-menu-button,.mobile-menu-overlay,.mobile-menu-drawer{display:none}
+
+        @media (max-width:650px){
+            body.mobile-menu-open{overflow:hidden}
+            header .header-inner > nav{display:none}
+
+            .mobile-menu-button{
+                position:absolute;top:16px;left:20px;z-index:110;
+                display:flex;align-items:center;justify-content:center;
+                width:30px;height:26px;padding:4px;
+                background:transparent;color:#ED8999;
+                border:0;border-radius:0;
+                cursor:pointer;
+                -webkit-tap-highlight-color:transparent
+            }
+            .mobile-menu-icon{width:22px;height:16px;display:flex;flex-direction:column;justify-content:space-between}
+            .mobile-menu-icon span{width:100%;height:2px;background:#ED8999;border-radius:999px}
+
+            .mobile-menu-overlay{
+                position:fixed;inset:0;z-index:200;display:block;
+                background:rgba(79,79,79,.22);opacity:0;visibility:hidden;
+                pointer-events:none;transition:opacity .25s ease,visibility .25s ease
+            }
+            .mobile-menu-overlay.is-open{opacity:1;visibility:visible;pointer-events:auto}
+
+            .mobile-menu-drawer{
+                position:fixed;top:0;left:0;bottom:0;z-index:210;display:block;
+                width:min(84vw,340px);
+                padding:calc(18px + env(safe-area-inset-top)) 18px calc(24px + env(safe-area-inset-bottom));
+                background:#FFF7F9;border-right:1px solid #ED7B8D;border-radius:0 34px 34px 0;
+                box-shadow:8px 0 28px rgba(79,79,79,.14);text-align:left;overflow-y:auto;
+                -webkit-overflow-scrolling:touch;transform:translateX(-105%);
+                transition:transform .28s ease
+            }
+            .mobile-menu-drawer.is-open{transform:translateX(0)}
+            .mobile-menu-top{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:2px 2px 14px;border-bottom:1px solid #F6D3DA}
+            .mobile-menu-title{color:#ED8999;font-size:19px;font-weight:700}
+            .mobile-menu-close{
+                width:38px;height:38px;display:flex;align-items:center;justify-content:center;padding:0;
+                background:#FFF;color:#ED8999;border:1px solid #ED7B8D;border-radius:50%;
+                font:500 25px "Quicksand",sans-serif;cursor:pointer
+            }
+            .mobile-menu-decoration{margin:12px 0 9px;color:#FFB7C5;font-family:serif;font-size:17px;letter-spacing:3px;text-align:center}
+            .mobile-menu-group{padding:3px 0 8px;border-bottom:1px solid #F6D3DA}
+            .mobile-menu-group:last-child{border-bottom:0}
+            .mobile-menu-link{display:block;padding:10px 12px;color:#ED8999;border-radius:14px;font-size:16px;font-weight:700;line-height:1.3}
+            .mobile-menu-link.active,.mobile-menu-link:active{background:#FFB7C5;color:#FFF}
+            .mobile-menu-sublinks{display:grid;gap:2px;padding:1px 0 2px 15px}
+            .mobile-menu-sublink{display:block;padding:8px 12px;color:#ED8999;border-radius:12px;font-size:14px;font-weight:600;line-height:1.3}
+            .mobile-menu-sublink::before{content:"↳";margin-right:7px;color:#FFB7C5}
+            .mobile-menu-sublink:active{background:#FFF}
+        }
+
+
         /* =========================
            TABLET
         ========================= */
@@ -793,6 +848,25 @@
 <body>
 
 <header>
+
+    <button class="mobile-menu-button" type="button" aria-label="Öppna meny" aria-controls="mobile-menu-drawer" aria-expanded="false">
+        <span class="mobile-menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+    <aside class="mobile-menu-drawer" id="mobile-menu-drawer" aria-label="Mobilmeny" aria-hidden="true">
+        <div class="mobile-menu-top">
+            <span class="mobile-menu-title">Bae's Chinchilla</span>
+            <button class="mobile-menu-close" type="button" aria-label="Stäng meny">×</button>
+        </div>
+        <div class="mobile-menu-decoration">♡ ❀ ♡</div>
+        <div class="mobile-menu-group"><a href="/" class="mobile-menu-link">Hem</a><div class="mobile-menu-sublinks"><a href="/resan/" class="mobile-menu-sublink">Resan</a><a href="/aveln/" class="mobile-menu-sublink">Aveln</a></div></div>
+        <div class="mobile-menu-group"><a href="/fakta/" class="mobile-menu-link">Fakta</a><div class="mobile-menu-sublinks"><a href="/färgmutationer/" class="mobile-menu-sublink">Färgmutationer</a></div></div>
+        <div class="mobile-menu-group"><a href="/skötsel/" class="mobile-menu-link">Skötsel</a><div class="mobile-menu-sublinks"><a href="/träslag/" class="mobile-menu-sublink">Träslag</a></div></div>
+        <div class="mobile-menu-group"><a href="/chinchillor/" class="mobile-menu-link">Chinchillor</a></div>
+        <div class="mobile-menu-group"><a href="/adoptera/" class="mobile-menu-link">Adoptera</a><div class="mobile-menu-sublinks"><a href="/omplacering/" class="mobile-menu-sublink">Omplacering</a></div></div>
+        <div class="mobile-menu-group"><a href="/donera/" class="mobile-menu-link active">Donera</a></div>
+        <div class="mobile-menu-group"><a href="/kontakt/" class="mobile-menu-link">Kontakt</a></div>
+    </aside>
 
     <!-- LANGUAGE SELECTOR -->
 
@@ -1256,6 +1330,21 @@
     </div>
 
 </section>
+
+
+
+<script>
+(() => {
+ const b=document.querySelector(".mobile-menu-button"),c=document.querySelector(".mobile-menu-close"),
+ d=document.querySelector(".mobile-menu-drawer"),o=document.querySelector(".mobile-menu-overlay");
+ if(!b||!c||!d||!o)return;
+ const open=()=>{d.classList.add("is-open");o.classList.add("is-open");document.body.classList.add("mobile-menu-open");b.setAttribute("aria-expanded","true");d.setAttribute("aria-hidden","false");o.setAttribute("aria-hidden","false");c.focus()};
+ const close=()=>{d.classList.remove("is-open");o.classList.remove("is-open");document.body.classList.remove("mobile-menu-open");b.setAttribute("aria-expanded","false");d.setAttribute("aria-hidden","true");o.setAttribute("aria-hidden","true")};
+ b.addEventListener("click",open);c.addEventListener("click",close);o.addEventListener("click",close);
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&d.classList.contains("is-open")){close();b.focus()}});
+ d.querySelectorAll("a").forEach(a=>a.addEventListener("click",close));
+})();
+</script>
 
 </body>
 </html>
