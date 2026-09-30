@@ -501,7 +501,47 @@
         }
 
         /* MOBILE SLIDE-OUT MENU */
-        .mobile-menu-button,.mobile-menu-overlay,.mobile-menu-drawer{display:none}
+        .mobile-menu-overlay,.mobile-menu-drawer{display:none}
+
+        /* DESKTOP + MOBILE SLIDE-OUT MENU */
+        .mobile-menu-button{
+            position:absolute;top:16px;left:24px;z-index:110;
+            display:flex;align-items:center;justify-content:center;
+            width:30px;height:26px;padding:4px;
+            background:transparent;color:#ED8999;border:0;border-radius:0;
+            cursor:pointer;-webkit-tap-highlight-color:transparent
+        }
+        .mobile-menu-icon{width:22px;height:16px;display:flex;flex-direction:column;justify-content:space-between}
+        .mobile-menu-icon span{width:100%;height:2px;background:#ED8999;border-radius:999px}
+        .mobile-menu-overlay{
+            position:fixed;inset:0;z-index:200;display:block;
+            background:rgba(79,79,79,.22);opacity:0;visibility:hidden;
+            pointer-events:none;transition:opacity .25s ease,visibility .25s ease
+        }
+        .mobile-menu-overlay.is-open{opacity:1;visibility:visible;pointer-events:auto}
+        .mobile-menu-drawer{
+            position:fixed;top:0;left:0;bottom:0;z-index:210;display:block;
+            width:min(84vw,340px);
+            padding:calc(18px + env(safe-area-inset-top)) 18px calc(24px + env(safe-area-inset-bottom));
+            background:#FFF7F9;border-right:1px solid #ED7B8D;border-radius:0 34px 34px 0;
+            box-shadow:8px 0 28px rgba(79,79,79,.14);text-align:left;overflow-y:auto;
+            -webkit-overflow-scrolling:touch;transform:translateX(-105%);
+            transition:transform .28s ease
+        }
+        .mobile-menu-drawer.is-open{transform:translateX(0)}
+        .mobile-menu-top{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:2px 2px 14px;border-bottom:1px solid #F6D3DA}
+        .mobile-menu-title{color:#ED8999;font-size:19px;font-weight:700}
+        .mobile-menu-close{width:38px;height:38px;display:flex;align-items:center;justify-content:center;padding:0;background:#FFF;color:#ED8999;border:1px solid #ED7B8D;border-radius:50%;font:500 25px "Quicksand",sans-serif;cursor:pointer}
+        .mobile-menu-decoration{margin:12px 0 9px;color:#FFB7C5;font-family:serif;font-size:17px;letter-spacing:3px;text-align:center}
+        .mobile-menu-group{padding:3px 0 8px;border-bottom:1px solid #F6D3DA}
+        .mobile-menu-group:last-child{border-bottom:0}
+        .mobile-menu-link{display:block;padding:10px 12px;color:#ED8999;border-radius:14px;font-size:16px;font-weight:700;line-height:1.3}
+        .mobile-menu-link.active,.mobile-menu-link:active{background:#FFB7C5;color:#FFF}
+        .mobile-menu-sublinks{display:grid;gap:2px;padding:1px 0 2px 15px}
+        .mobile-menu-sublink{display:block;padding:8px 12px;color:#ED8999;border-radius:12px;font-size:14px;font-weight:600;line-height:1.3}
+        .mobile-menu-sublink::before{content:"↳";margin-right:7px;color:#FFB7C5}
+        .mobile-menu-sublink:active{background:#FFF}
+        body.mobile-menu-open{overflow:hidden}
 
         @media (max-width:650px){
             body.mobile-menu-open{overflow:hidden}
