@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Träslag &amp; örter | Bae's Chinchilla</title>
+
+    <meta
+        name="description"
+        content="Information om säkra och ej säkra träslag samt säkra örter och växter för chinchillor."
+    >
+
+    <link rel="canonical" href="https://baeschinchillas.se/träslag/">
+
+    <link
+        rel="alternate"
+        hreflang="sv"
+        href="https://baeschinchillas.se/träslag/"
+    >
+    <link
+        rel="alternate"
+        hreflang="en"
+        href="https://baeschinchillas.se/en/wood/"
+    >
+    <link
+        rel="alternate"
+        hreflang="x-default"
+        href="https://baeschinchillas.se/träslag/"
+    >
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --background: #FFB7C5;
+            --white: #FFFFFF;
+            --pink: #FFB7C5;
+            --heading: #ED8999;
+            --border: #ED7B8D;
+            --text: #4F4F4F;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #FFB7C5;
+            color: var(--text);
+            font-family: "Quicksand", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: relative;
+            background: #FFFFFF;
+            border-bottom: 2px solid #ED7B8D;
+            text-align: center;
+            padding: 28px 20px 0;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.2;
+            z-index: 10;
+        }
+
+        .language-selector a {
+            color: #ED8999;
+            transition: color 0.2s ease;
+        }
+
+        .language-selector a:hover {
+            color: #FFB7C5;
+        }
+
+        .language-selector a.active-language {
+            color: #ED7B8D;
+            font-weight: 700;
+        }
+
+        .language-divider {
+            color: #FFB7C5;
+            font-weight: 500;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo-display {
+            width: 100%;
+            min-height: 145px;
+            display: grid;
+            grid-template-columns: 1fr 170px 1fr;
+            align-items: end;
+            gap: 20px;
+            margin: 0 auto 18px;
+        }
+
+        .logo-side {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 18px;
+            height: 135px;
+        }
+
+        .decorative-chinchilla {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+        }
+
+        .left-side .chinchilla-1 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        .left-side .chinchilla-2 {
+            width: 115px;
+            max-height: 105px;
+        }
+
+        .left-side .chinchilla-3 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        .right-side .chinchilla-1 {
+            width: 100px;
+            max-height: 118px;
+        }
+
+        .right-side .chinchilla-2 {
+            width: 105px;
+            max-height: 115px;
+        }
+
+        .right-side .chinchilla-3 {
+            width: 105px;
+            max-height: 112px;
+        }
+
+        .main-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 140px;
+        }
+
+        .site-logo {
+            width: 150px;
+            height: auto;
+            max-height: 140px;
+            display: block;
+            object-fit: contain;
+        }
+
+        .brand-main {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            color: #ED8999;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .title-blossom {
+            color: #FFB7C5;
+            font-family: serif;
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 11px;
+            margin-top: 28px;
+            padding-bottom: 5px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 13px 25px;
+            color: #ED8999;
+            background: #FFF7F9;
+            border: 1px solid #ED7B8D;
+            border-radius: 18px;
+            font-size: 15px;
+            font-weight: 600;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background: #FFB7C5;
+            color: #FFFFFF;
+            transform: translateY(-1px);
+        }
+
+        nav a.active {
+            background: #FFB7C5;
+            color: #FFFFFF;
+        }
+
+        /* =========================
+           HOVER DROPDOWNS
+        ========================= */
+
+        .nav-item {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nav-item > a {
+            display: block;
+        }
+
+        .nav-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 50%;
+            transform: translateX(-50%) translateY(-4px);
+            min-width: max-content;
+            padding: 5px;
+            background: #FFF7F9;
+            border: 1px solid #ED7B8D;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(237, 123, 141, 0.12);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition:
+                opacity 0.18s ease,
+                transform 0.18s ease,
+                visibility 0.18s ease;
+            z-index: 50;
+        }
+
+        .nav-dropdown::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -7px;
+            height: 7px;
+        }
+
+        .nav-item:hover .nav-dropdown,
+        .nav-item:focus-within .nav-dropdown {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .nav-dropdown a {
+            display: block;
+            white-space: nowrap;
+            padding: 7px 12px;
+            border: 0;
+            border-radius: 10px;
+            background: transparent;
+            font-size: 13px;
+        }
+
+        .nav-dropdown a:hover,
+        .nav-dropdown a:focus,
+        .nav-dropdown a.active-subtab {
+            background: #FFB7C5;
+            color: #FFFFFF;
+            border-radius: 16px;
+            transform: none;
+        }
+
+        /* =========================
+           PAGE
+        ========================= */
+
+        .page {
+            width: 94%;
+            max-width: 1100px;
+            margin: 38px auto 0;
+        }
+
+        .content {
+            background: #FFFFFF;
+            border: 1px solid #ED7B8D;
+            border-radius: 70px;
+            padding: 55px 70px 65px;
+            box-shadow: 0 8px 25px rgba(237, 123, 141, 0.08);
+        }
+
+        /* =========================
+           TRÄSLAG & ÖRTER
+        ========================= */
+
+        .page-title {
+            max-width: 850px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+
+        .page-title h2 {
+            margin: 0;
+            color: #ED8999;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .decorative {
+            margin-top: 8px;
+            color: #FFB7C5;
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+
+        .wood-grid,
+        .herb-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 70px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .list-column {
+            min-width: 0;
+        }
+
+        .wood-grid .list-column,
+        .herb-grid .list-column {
+            width: max-content;
+            max-width: 100%;
+            justify-self: center;
+        }
+
+        .list-heading {
+            margin: 0 0 18px;
+            color: #ED8999;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: left;
+        }
+
+        .list-decoration {
+            width: max-content;
+            margin: 0 0 20px;
+            color: #FFB7C5;
+            font-size: 20px;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+
+        .wood-list,
+        .herb-list {
+            margin: 0;
+            padding-left: 1.25em;
+            color: #4F4F4F;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.9;
+        }
+
+        .herb-section {
+            max-width: 850px;
+            margin: 58px auto 0;
+            padding-top: 48px;
+            border-top: 1px solid #F6D3DA;
+        }
+
+        .herb-heading {
+            margin: 0 0 18px;
+            color: #ED8999;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: center;
+        }
+
+        .herb-decoration {
+            margin: 5px 0 20px;
+            color: #FFB7C5;
+            font-size: 20px;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+
+        /* =========================
+           SOCIAL MEDIA
+        ========================= */
+
+        .social-area {
+            width: 100%;
+            margin-top: 22px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        .social-divider {
+            width: 900px;
+            height: 1px;
+            background: #ED7B8D;
+            margin: 0 auto 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ED8999;
+            text-decoration: none;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .social-link:hover {
+            color: #FFB7C5;
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .facebook-icon {
+            fill: #ED8999;
+        }
+
+        .facebook-f {
+            fill: #FFFFFF;
+        }
+
+        .instagram-icon {
+            fill: none;
+            stroke: #ED8999;
+            stroke-width: 1.8;
+        }
+
+        .instagram-dot {
+            fill: #ED8999;
+            stroke: none;
+        }
+
+        /* MOBILE SLIDE-OUT MENU */
+        .mobile-menu-overlay,.mobile-menu-drawer{display:none}
+
+        /* DESKTOP + MOBILE SLIDE-OUT MENU */
+        .mobile-menu-button{
+            position:absolute;top:16px;left:24px;z-index:110;
+            display:flex;align-items:center;justify-content:center;
+            width:30px;height:26px;padding:4px;
+            background:transparent;color:#ED8999;border:0;border-radius:0;
+            cursor:pointer;-webkit-tap-highlight-color:transparent
+        }
+        .mobile-menu-icon{width:22px;height:16px;display:flex;flex-direction:column;justify-content:space-between}
+        .mobile-menu-icon span{width:100%;height:2px;background:#ED8999;border-radius:999px}
+        .mobile-menu-overlay{
+            position:fixed;inset:0;z-index:200;display:block;
+            background:rgba(79,79,79,.22);opacity:0;visibility:hidden;
+            pointer-events:none;transition:opacity .25s ease,visibility .25s ease
+        }
+        .mobile-menu-overlay.is-open{opacity:1;visibility:visible;pointer-events:auto}
+        .mobile-menu-drawer{
+            position:fixed;top:0;left:0;bottom:0;z-index:210;display:block;
+            width:min(84vw,340px);
+            padding:calc(18px + env(safe-area-inset-top)) 18px calc(24px + env(safe-area-inset-bottom));
+            background:#FFF7F9;border-right:1px solid #ED7B8D;border-radius:0 34px 34px 0;
+            box-shadow:8px 0 28px rgba(79,79,79,.14);text-align:left;overflow-y:auto;
+            -webkit-overflow-scrolling:touch;transform:translateX(-105%);
+            transition:transform .28s ease
+        }
+        .mobile-menu-drawer.is-open{transform:translateX(0)}
+        .mobile-menu-top{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:2px 2px 14px;border-bottom:1px solid #F6D3DA}
+        .mobile-menu-title{color:#ED8999;font-size:19px;font-weight:700}
+        .mobile-menu-close{width:38px;height:38px;display:flex;align-items:center;justify-content:center;padding:0;background:#FFF;color:#ED8999;border:1px solid #ED7B8D;border-radius:50%;font:500 25px "Quicksand",sans-serif;cursor:pointer}
+        .mobile-menu-decoration{margin:12px 0 9px;color:#FFB7C5;font-family:serif;font-size:17px;letter-spacing:3px;text-align:center}
+        .mobile-menu-group{padding:3px 0 8px;border-bottom:1px solid #F6D3DA}
+        .mobile-menu-group:last-child{border-bottom:0}
+        .mobile-menu-link{display:block;padding:10px 12px;color:#ED8999;border-radius:14px;font-size:16px;font-weight:700;line-height:1.3}
+        .mobile-menu-link.active,.mobile-menu-link:active{background:#FFB7C5;color:#FFF}
+        .mobile-menu-sublinks{display:grid;gap:2px;padding:1px 0 2px 15px}
+        .mobile-menu-sublink{display:block;padding:8px 12px;color:#ED8999;border-radius:12px;font-size:14px;font-weight:600;line-height:1.3}
+        .mobile-menu-sublink::before{content:"↳";margin-right:7px;color:#FFB7C5}
+        .mobile-menu-sublink:active{background:#FFF}
+        body.mobile-menu-open{overflow:hidden}
+
+        .mobile-menu-sublink.active-subpage{
+            background:#FFB7C5;
+            color:#FFF;
+        }
+        .mobile-menu-sublink.active-subpage::before{
+            color:#FFF;
+        }
+
+        @media (max-width:650px){
+            body.mobile-menu-open{overflow:hidden}
+            header .header-inner > nav{display:none}
+
+            .mobile-menu-button{
+                position:absolute;top:16px;left:20px;z-index:110;
+                display:flex;align-items:center;justify-content:center;
+                width:30px;height:26px;padding:4px;
+                background:transparent;color:#ED8999;
+                border:0;border-radius:0;
+                cursor:pointer;
+                -webkit-tap-highlight-color:transparent
+            }
+            .mobile-menu-icon{width:22px;height:16px;display:flex;flex-direction:column;justify-content:space-between}
+            .mobile-menu-icon span{width:100%;height:2px;background:#ED8999;border-radius:999px}
+
+            .mobile-menu-overlay{
+                position:fixed;inset:0;z-index:200;display:block;
+                background:rgba(79,79,79,.22);opacity:0;visibility:hidden;
+                pointer-events:none;transition:opacity .25s ease,visibility .25s ease
+            }
+            .mobile-menu-overlay.is-open{opacity:1;visibility:visible;pointer-events:auto}
+
+            .mobile-menu-drawer{
+                position:fixed;top:0;left:0;bottom:0;z-index:210;display:block;
+                width:min(84vw,340px);
+                padding:calc(18px + env(safe-area-inset-top)) 18px calc(24px + env(safe-area-inset-bottom));
+                background:#FFF7F9;border-right:1px solid #ED7B8D;border-radius:0 34px 34px 0;
+                box-shadow:8px 0 28px rgba(79,79,79,.14);text-align:left;overflow-y:auto;
+                -webkit-overflow-scrolling:touch;transform:translateX(-105%);
+                transition:transform .28s ease
+            }
+            .mobile-menu-drawer.is-open{transform:translateX(0)}
+            .mobile-menu-top{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:2px 2px 14px;border-bottom:1px solid #F6D3DA}
+            .mobile-menu-title{color:#ED8999;font-size:19px;font-weight:700}
+            .mobile-menu-close{
+                width:38px;height:38px;display:flex;align-items:center;justify-content:center;padding:0;
+                background:#FFF;color:#ED8999;border:1px solid #ED7B8D;border-radius:50%;
+                font:500 25px "Quicksand",sans-serif;cursor:pointer
+            }
+            .mobile-menu-decoration{margin:12px 0 9px;color:#FFB7C5;font-family:serif;font-size:17px;letter-spacing:3px;text-align:center}
+            .mobile-menu-group{padding:3px 0 8px;border-bottom:1px solid #F6D3DA}
+            .mobile-menu-group:last-child{border-bottom:0}
+            .mobile-menu-link{display:block;padding:10px 12px;color:#ED8999;border-radius:14px;font-size:16px;font-weight:700;line-height:1.3}
+            .mobile-menu-link.active,.mobile-menu-link:active{background:#FFB7C5;color:#FFF}
+            .mobile-menu-sublinks{display:grid;gap:2px;padding:1px 0 2px 15px}
+            .mobile-menu-sublink{display:block;padding:8px 12px;color:#ED8999;border-radius:12px;font-size:14px;font-weight:600;line-height:1.3}
+            .mobile-menu-sublink::before{content:"↳";margin-right:7px;color:#FFB7C5}
+            .mobile-menu-sublink:active{background:#FFF}
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .logo-display {
+                grid-template-columns: 1fr 145px 1fr;
+                gap: 10px;
+            }
+
+            .logo-side {
+                gap: 8px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 80px;
+                max-height: 100px;
+            }
+
+            .site-logo {
+                width: 135px;
+            }
+
+            .social-divider {
+                width: 90%;
+            }
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 650px) {
+
+            header {
+                padding-top: 50px;
+            }
+
+            .language-selector {
+                top: 16px;
+                right: 20px;
+                font-size: 12px;
+            }
+
+            .logo-display {
+                min-height: 105px;
+                grid-template-columns: 1fr 115px 1fr;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+
+            .logo-side {
+                height: 95px;
+                gap: 3px;
+            }
+
+            .left-side .chinchilla-1,
+            .left-side .chinchilla-2,
+            .left-side .chinchilla-3,
+            .right-side .chinchilla-1,
+            .right-side .chinchilla-2,
+            .right-side .chinchilla-3 {
+                width: 43px;
+                max-height: 70px;
+            }
+
+            .main-logo-container {
+                height: 105px;
+            }
+
+            .site-logo {
+                width: 110px;
+                max-height: 105px;
+            }
+
+            .brand-main {
+                gap: 9px;
+                font-size: 28px;
+            }
+
+            .title-blossom {
+                font-size: 26px;
+            }
+
+            nav {
+                gap: 6px;
+                margin-top: 22px;
+                padding-bottom: 5px;
+            }
+
+            nav a {
+                padding: 10px 14px;
+                font-size: 13px;
+                border-radius: 14px;
+            }
+
+            .nav-item {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-dropdown {
+                position: static;
+                min-width: 0;
+                margin-top: 5px;
+                padding: 5px;
+                transform: none;
+                display: none;
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                border-radius: 14px;
+                box-shadow: none;
+            }
+
+            .nav-item:focus-within .nav-dropdown {
+                display: block;
+                transform: none;
+            }
+
+            .nav-dropdown::before {
+                display: none;
+            }
+
+            .nav-dropdown a {
+                padding: 7px 11px;
+                font-size: 12px;
+                border-radius: 10px;
+            }
+
+            .page {
+                width: 94%;
+                margin-top: 28px;
+            }
+
+            .content {
+                border-radius: 55px;
+                padding: 38px 25px 45px;
+            }
+
+            .page-title {
+                margin-bottom: 38px;
+            }
+
+            .page-title h2 {
+                font-size: 26px;
+            }
+
+            .decorative {
+                font-size: 19px;
+                letter-spacing: 3px;
+            }
+
+            .wood-grid,
+            .herb-grid {
+                grid-template-columns: 1fr;
+                gap: 34px;
+            }
+
+            .list-heading {
+                font-size: 21px;
+            }
+
+            .list-decoration,
+            .herb-decoration {
+                font-size: 19px;
+            }
+
+            .herb-section {
+                margin-top: 44px;
+                padding-top: 38px;
+            }
+
+            .herb-heading {
+                font-size: 21px;
+            }
+
+            .social-area {
+                padding-bottom: 20px;
+            }
+
+            .social-divider {
+                width: 90%;
+                margin-bottom: 18px;
+            }
+
+            .social-links {
+                gap: 18px;
+            }
+
+            .social-link {
+                width: 34px;
+                height: 34px;
+            }
+
+            .social-icon {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        /* =========================
+           VERY SMALL PHONES
+        ========================= */
+
+        @media (max-width: 430px) {
+
+            .language-selector {
+                right: 15px;
+            }
+
+            .logo-display {
+                grid-template-columns: 1fr 110px 1fr;
+            }
+
+            .logo-side .chinchilla-1,
+            .logo-side .chinchilla-3 {
+                display: none;
+            }
+
+            .logo-side .chinchilla-2 {
+                width: 55px;
+                max-height: 75px;
+            }
+
+            .site-logo {
+                width: 105px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <button class="mobile-menu-button" type="button" aria-label="Öppna meny" aria-controls="mobile-menu-drawer" aria-expanded="false">
+        <span class="mobile-menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+    <aside class="mobile-menu-drawer" id="mobile-menu-drawer" aria-label="Mobilmeny" aria-hidden="true">
+        <div class="mobile-menu-top">
+            <span class="mobile-menu-title">Bae's Chinchilla</span>
+            <button class="mobile-menu-close" type="button" aria-label="Stäng meny">×</button>
+        </div>
+        <div class="mobile-menu-decoration">♡ ❀ ♡</div>
+        <div class="mobile-menu-group"><a href="/" class="mobile-menu-link">Hem</a><div class="mobile-menu-sublinks"><a href="/resan/" class="mobile-menu-sublink">Resan</a><a href="/aveln/" class="mobile-menu-sublink">Aveln</a></div></div>
+        <div class="mobile-menu-group"><a href="/fakta/" class="mobile-menu-link">Fakta</a><div class="mobile-menu-sublinks"><a href="/färgmutationer/" class="mobile-menu-sublink">Färgmutationer</a></div></div>
+        <div class="mobile-menu-group"><a href="/skötsel/" class="mobile-menu-link">Skötsel</a><div class="mobile-menu-sublinks"><a href="/träslag/" class="mobile-menu-sublink active-subpage">Träslag</a></div></div>
+        <div class="mobile-menu-group"><a href="/chinchillor/" class="mobile-menu-link">Chinchillor</a></div>
+        <div class="mobile-menu-group"><a href="/adoptera/" class="mobile-menu-link">Adoptera</a><div class="mobile-menu-sublinks"><a href="/omplacering/" class="mobile-menu-sublink">Omplacering</a></div></div>
+        <div class="mobile-menu-group"><a href="/donera/" class="mobile-menu-link">Donera</a></div>
+        <div class="mobile-menu-group"><a href="/kontakt/" class="mobile-menu-link">Kontakt</a></div>
+    </aside>
+
+    <!-- LANGUAGE SELECTOR -->
+
+    <div class="language-selector" aria-label="Språkval">
+
+        <a
+            href="/en/wood/"
+            lang="en"
+            hreflang="en"
+        >English</a>
+
+        <span class="language-divider">|</span>
+
+        <a
+            href="/träslag/"
+            class="active-language"
+            lang="sv"
+            hreflang="sv"
+        >Swedish</a>
+
+    </div>
+
+    <div class="header-inner">
+
+        <div class="logo-display">
+
+            <!-- LEFT CHINCHILLAS -->
+
+            <div class="logo-side left-side">
+
+                <img
+                    src="/logos/chinchilla-right-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="/logos/chinchilla-right-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="/logos/chinchilla-right-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+
+            </div>
+
+            <!-- MAIN LOGO -->
+
+            <div class="main-logo-container">
+
+                <img
+                    src="/logos/logo-final.png"
+                    alt="Bae's Chinchilla logotyp"
+                    class="site-logo"
+                >
+
+            </div>
+
+            <!-- RIGHT CHINCHILLAS -->
+
+            <div class="logo-side right-side">
+
+                <img
+                    src="/logos/chinchilla-left-1.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-1"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="/logos/chinchilla-left-2.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-2"
+                    aria-hidden="true"
+                >
+
+                <img
+                    src="/logos/chinchilla-left-3.png"
+                    alt=""
+                    class="decorative-chinchilla chinchilla-3"
+                    aria-hidden="true"
+                >
+
+            </div>
+
+        </div>
+
+        <!-- WEBSITE NAME -->
+
+        <h1 class="brand-main">
+            <span class="title-blossom">❀</span>
+            <span>Bae's Chinchilla</span>
+            <span class="title-blossom">❀</span>
+        </h1>
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <div class="nav-item">
+                <a href="/">Hem</a>
+                <div class="nav-dropdown">
+                    <a href="/resan/">Resan</a>
+                    <a href="/aveln/">Aveln</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a href="/fakta/">Fakta</a>
+                <div class="nav-dropdown">
+                    <a href="/färgmutationer/">Färgmutationer</a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a href="/skötsel/">Skötsel</a>
+                <div class="nav-dropdown">
+                    <a href="/träslag/" class="active-subtab">Träslag</a>
+                </div>
+            </div>
+
+            <a href="/chinchillor/">Chinchillor</a>
+
+            <div class="nav-item">
+                <a href="/adoptera/">Adoptera</a>
+                <div class="nav-dropdown">
+                    <a href="/omplacering/">Omplacering</a>
+                </div>
+            </div>
+
+            <a href="/donera/">Donera</a>
+
+            <a href="/kontakt/">Kontakt</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- =========================
+     MAIN PAGE
+========================= -->
+
+<main class="page">
+
+    <div class="content">
+
+        <section class="page-title">
+            <h2>Träslag &amp; örter</h2>
+            <div class="decorative">♡ ❀ ♡</div>
+        </section>
+
+        <section class="wood-grid">
+
+            <div class="list-column">
+                <h3 class="list-heading">Säkra träslag</h3>
+                <ul class="wood-list">
+                    <li>Alm</li>
+                    <li>Ask</li>
+                    <li>Asp</li>
+                    <li>Bambu</li>
+                    <li>Björk</li>
+                    <li>Furu (ugnstorkat)</li>
+                    <li>Hasselnöt</li>
+                    <li>Pil</li>
+                    <li>Päron</li>
+                    <li>Vide</li>
+                    <li>Äpple</li>
+                </ul>
+            </div>
+
+            <div class="list-column">
+                <h3 class="list-heading">Ej säkra träslag</h3>
+                <ul class="wood-list">
+                    <li>Akacia</li>
+                    <li>Asklönn</li>
+                    <li>Barrträd</li>
+                    <li>Bok</li>
+                    <li>Citrusträd</li>
+                    <li>Ek</li>
+                    <li>Fläder</li>
+                    <li>Järnek</li>
+                    <li>Lagerträd</li>
+                    <li>Stenfruktsträd</li>
+                    <li>Valnöt</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="herb-section">
+            <h3 class="herb-heading">Säkra örter/växter</h3>
+
+            <div class="herb-grid">
+                <div class="list-column">
+                    <ul class="herb-list">
+                        <li>Alfalfa</li>
+                        <li>Blåklocka</li>
+                        <li>Blåklint</li>
+                        <li>Daggkåpa</li>
+                        <li>Dahlia</li>
+                        <li>Dill</li>
+                        <li>Hallonblad</li>
+                        <li>Hibiskus</li>
+                        <li>Jordgubbsplanta</li>
+                        <li>Kamomill</li>
+                    </ul>
+                </div>
+
+                <div class="list-column">
+                    <ul class="herb-list">
+                        <li>Lavendel</li>
+                        <li>Maskros</li>
+                        <li>Mynta</li>
+                        <li>Nypon</li>
+                        <li>Persilja</li>
+                        <li>Rosblad</li>
+                        <li>Syren</li>
+                        <li>Timjan</li>
+                        <li>Tusensköna</li>
+                        <li>Tussilago</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</main>
+
+<!-- =========================
+     SOCIAL MEDIA
+========================= -->
+
+<section class="social-area">
+
+    <div class="social-divider"></div>
+
+    <div class="social-links">
+
+        <!-- FACEBOOK -->
+
+        <a
+            href="https://www.facebook.com/baeschinchillas"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+        >
+            <svg
+                class="social-icon facebook-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <circle cx="12" cy="12" r="11" />
+
+                <path
+                    class="facebook-f"
+                    d="M13.6 20V13.5H15.8L16.2 10.9H13.6V9.2C13.6 8.45 13.95 7.95 14.95 7.95H16.3V5.65C15.85 5.6 15.15 5.55 14.35 5.55C11.95 5.55 10.45 7 10.45 9.45V10.9H8.2V13.5H10.45V20H13.6Z"
+                />
+            </svg>
+        </a>
+
+        <!-- INSTAGRAM -->
+
+        <a
+            href="https://www.instagram.com/baeschinchilla"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+        >
+            <svg
+                class="social-icon instagram-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="5"
+                />
+
+                <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                />
+
+                <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    class="instagram-dot"
+                />
+            </svg>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<script>
+(() => {
+ const b=document.querySelector(".mobile-menu-button"),c=document.querySelector(".mobile-menu-close"),
+ d=document.querySelector(".mobile-menu-drawer"),o=document.querySelector(".mobile-menu-overlay");
+ if(!b||!c||!d||!o)return;
+ const open=()=>{d.classList.add("is-open");o.classList.add("is-open");document.body.classList.add("mobile-menu-open");b.setAttribute("aria-expanded","true");d.setAttribute("aria-hidden","false");o.setAttribute("aria-hidden","false");c.focus()};
+ const close=()=>{d.classList.remove("is-open");o.classList.remove("is-open");document.body.classList.remove("mobile-menu-open");b.setAttribute("aria-expanded","false");d.setAttribute("aria-hidden","true");o.setAttribute("aria-hidden","true")};
+ b.addEventListener("click",open);c.addEventListener("click",close);o.addEventListener("click",close);
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&d.classList.contains("is-open")){close();b.focus()}});
+ d.querySelectorAll("a").forEach(a=>a.addEventListener("click",close));
+})();
+</script>
+
+</body>
+</html>
