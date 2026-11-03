@@ -384,6 +384,13 @@
             justify-self: center;
         }
 
+        /* Move only the unsafe-wood column; all other columns stay put. */
+        @media (min-width: 651px) {
+            .wood-grid > .list-column:nth-child(2) {
+                transform: translateX(28px);
+            }
+        }
+
         .list-heading {
             margin: 0 0 18px;
             color: #ED8999;
